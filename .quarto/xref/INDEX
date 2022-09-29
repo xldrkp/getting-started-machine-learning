@@ -1,0 +1,35 @@
+{
+  "index.qmd": {
+    "index.html": "abf23aaf"
+  },
+  "intro.qmd": {
+    "intro.html": "1baf1d4b"
+  },
+  "summary.qmd": {
+    "summary.html": "bd934485"
+  },
+  "references.qmd": {
+    "references.html": "a0beb079"
+  },
+  "further.qmd": {
+    "further.html": "7943b25c"
+  },
+  "appendices/installation.qmd": {
+    "installation.html": "2435369e"
+  },
+  "introduction/index.qmd": {
+    "index.html": "4881c451"
+  },
+  "introduction/theory.qmd": {
+    "theory.html": "e65f5bda"
+  },
+  "projects/index.qmd": {
+    "index.html": "496b7aa3"
+  },
+  "projects/eierml.qmd": {
+    "eierml.html": "a896ab4b"
+  },
+  "appendices/further.qmd": {
+    "further.html": "81fa1738"
+  }
+}

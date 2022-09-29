@@ -1,0 +1,35 @@
+lang: de
+license: "CC BY"
+repo-url: https://asdf.de
+project:
+  type: book
+  preview:
+    port: 7206
+    browser: false  
+
+book:
+  title: "Machine Learning mit Python"
+  subtitle: "Einführung und Grundlagen"
+  author: "Axel Dürkop"
+  date: "29. September 2022"
+  chapters:
+    - index.qmd
+    - part: introduction/index.qmd
+      chapters: 
+        - introduction/theory.qmd
+    - part: projects/index.qmd
+      chapters: 
+        - projects/eierml.qmd
+    - references.qmd
+  appendices:
+    - appendices/installation.qmd
+    - appendices/further.qmd
+bibliography: references.bib
+
+format:
+  html:
+    theme: flatly
+    fontsize: 1.1em
+    linestretch: 1.7    
+  pdf:
+    documentclass: scrreprt
