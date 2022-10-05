@@ -1,13 +1,26 @@
-# Theoretischer Hintergrund
+# Statistische Grundlagen
 
-Elit esse nulla cillum incididunt mollit sint cillum quis ad. Irure laboris officia dolore in eiusmod amet laborum. Cupidatat nisi commodo culpa occaecat tempor. Tempor mollit cillum ut qui dolor. Aliquip qui eu est quis cupidatat eiusmod ullamco.
+Die Grundlagen verschiedener statistischer Funktionen und Vorgehensweisen zeige ich entlang der sehr guten Einführung zu Machine Learning [auf der Seite der W3School](https://www.w3schools.com/python/python_ml_getting_started.asp).
 
-Adipisicing adipisicing cupidatat consequat ullamco amet culpa reprehenderit esse cillum. Mollit aliqua ex est cillum sit occaecat. Id nisi deserunt id ea amet enim ut ut enim non aute id. Nostrud culpa aliquip sit enim occaecat incididunt.
+Dort stehen die folgenden Konzepte im Mittelpunkt:
 
-Tempor qui ea fugiat Lorem tempor nostrud quis mollit. Ullamco excepteur eiusmod eu dolor quis esse. Velit occaecat exercitation sint Lorem nulla excepteur elit adipisicing ea. Dolore pariatur exercitation aliquip minim dolor deserunt minim amet dolor Lorem nostrud commodo id fugiat. Eu laborum non eiusmod et. Elit incididunt amet ullamco irure cillum labore nulla excepteur voluptate.
+- Mittelwert, Medianwert, Modalwert (*mean*, *median*, *mode*)
+- Standardabweichung
+- Perzentilwert
+- Datenverteilung
+- Normalverteilung
+- Lineare Regression
+- Polynominale Regression
+
+In diesem Grundlagenskript arbeiten wir zunächst auf das Thema *Regression* hin, um anschließend noch Konzepte der *Klassifizierung* kennenzulernen.
+
+## Decision tree
+
+- <https://www.askpython.com/python/machine-learning-introduction>
 
 Proident tempor non exercitation qui. Qui magna commodo nostrud quis. Id nulla ex laboris elit ullamco ut sunt et cillum ut deserunt. Laboris anim veniam elit aliquip. Dolore anim voluptate eiusmod enim proident ea labore non id ex incididunt tempor dolor sit. Occaecat esse tempor proident elit laboris consequat cupidatat.
 
-Non nostrud sit nulla officia quis sunt laborum sunt ex deserunt ex quis et in. Sint non elit excepteur aliqua nisi laboris elit velit. Proident eu ipsum tempor voluptate officia ullamco cillum pariatur officia ea nostrud. Pariatur aliqua ullamco aute duis anim.
+## Literatur zur Einführung
 
-Tempor amet elit tempor Lorem ipsum aliqua cupidatat. Ullamco nulla nisi velit non elit. Ullamco in ad eiusmod Lorem dolore ut fugiat. Consequat excepteur duis nulla laboris ut dolore officia do ut labore. Magna fugiat aute occaecat duis reprehenderit ipsum aute. Fugiat aliquip aliquip irure irure est aliqua culpa.
+- @kirsteEinleitungEntwicklungswegeZur2019
+- @stubbeNeueIntelligenzNeue2019

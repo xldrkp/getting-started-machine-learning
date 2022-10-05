@@ -5,7 +5,7 @@ project:
   type: book
   preview:
     port: 7206
-    browser: false  
+    browser: false
 
 book:
   title: "Machine Learning mit Python"
@@ -15,21 +15,39 @@ book:
   chapters:
     - index.qmd
     - part: introduction/index.qmd
-      chapters: 
+      chapters:
         - introduction/theory.qmd
+        - introduction/training.qmd
+        - introduction/find-data.qmd
+        - introduction/pretrained-models.qmd
+    - part: vorbereitung/index.qmd
+      chapters:
+        - vorbereitung/matplotlib.ipynb
+        - vorbereitung/numpy.ipynb
+        - vorbereitung/pandas.ipynb
+    - part: machine-learning/index.qmd
+      chapters:
+        - machine-learning/preprocessing.ipynb
+        - machine-learning/linear-regression.ipynb
+        - machine-learning/multiple-linear-regression.ipynb
+        - machine-learning/logistic-regression.ipynb
+        - machine-learning/svm.ipynb
     - part: projects/index.qmd
-      chapters: 
+      chapters:
         - projects/eierml.qmd
     - references.qmd
   appendices:
     - appendices/installation.qmd
     - appendices/further.qmd
-bibliography: references.bib
+bibliography: refs.bib
 
 format:
   html:
-    theme: flatly
+    html-math-method: mathjax
+    theme: light
     fontsize: 1.1em
-    linestretch: 1.7    
+    linestretch: 1.7
+    link-external-icon: true
+    link-external-newwindow: true
   pdf:
     documentclass: scrreprt

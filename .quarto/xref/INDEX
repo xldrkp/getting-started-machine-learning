@@ -31,5 +31,77 @@
   },
   "appendices/further.qmd": {
     "further.html": "81fa1738"
+  },
+  "notebooks/index.qmd": {
+    "index.html": "9158b0ca"
+  },
+  "notebooks/numpy.ipynb": {
+    "numpy.html": "04e91afa"
+  },
+  "introduction/find-data.qmd": {
+    "find-data.html": "b09bd31a"
+  },
+  "introduction/training.qmd": {
+    "training.html": "07be196c"
+  },
+  "introduction/pretrained-models.qmd": {
+    "pretrained-models.html": "b5dbe303"
+  },
+  "notebooks/pandas.ipynb": {
+    "pandas.html": "1deed2f0"
+  },
+  "notebooks/scikit-learn.ipynb": {
+    "scikit-learn.html": "80de0282"
+  },
+  "notebooks/matplotlib.ipynb": {
+    "matplotlib.html": "1e0cd92e"
+  },
+  "notebooks/ml-handson.ipynb": {
+    "ml-handson.html": "003f3028"
+  },
+  "notebooks/preprocessing.ipynb": {
+    "preprocessing.html": "53ab2f33"
+  },
+  "notebooks/linear-regression.ipynb": {
+    "linear-regression.html": "401ac781"
+  },
+  "vorbereitung/index.qmd": {
+    "index.html": "c6300f75"
+  },
+  "vorbereitung/numpy.ipynb": {
+    "numpy.html": "1ff063ed"
+  },
+  "vorbereitung/pandas.ipynb": {
+    "pandas.html": "b9d989d7"
+  },
+  "vorbereitung/matplotlib.ipynb": {
+    "matplotlib.html": "5496044c"
+  },
+  "notebooks/multiple-linear-regression.ipynb": {
+    "multiple-linear-regression.html": "2abd4f3f"
+  },
+  "notebooks/logistic-regression.ipynb": {
+    "logistic-regression.html": "76c077f1"
+  },
+  "notebooks/svm.ipynb": {
+    "svm.html": "b7eaf57e"
+  },
+  "machine-learning/preprocessing.ipynb": {
+    "preprocessing.html": "c2443acd"
+  },
+  "machine-learning/linear-regression.ipynb": {
+    "linear-regression.html": "31db9c76"
+  },
+  "machine-learning/multiple-linear-regression.ipynb": {
+    "multiple-linear-regression.html": "f38fa3ee"
+  },
+  "machine-learning/logistic-regression.ipynb": {
+    "logistic-regression.html": "206d31e9"
+  },
+  "machine-learning/svm.ipynb": {
+    "svm.html": "8cd08256"
+  },
+  "machine-learning/index.qmd": {
+    "index.html": "fa6b1487"
   }
 }

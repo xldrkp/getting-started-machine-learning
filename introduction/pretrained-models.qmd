@@ -1,0 +1,5 @@
+# Vortrainierte Modelle
+
+- https://www.tensorflow.org/js/models
+- https://firebase.google.com/docs/ml-kit
+- https://tfhub.dev/

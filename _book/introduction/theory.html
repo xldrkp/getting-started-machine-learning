@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Machine Learning mit Python - 1&nbsp; Theoretischer Hintergrund</title>
+<title>Machine Learning mit Python - 1&nbsp; Statistische Grundlagen</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -30,7 +49,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../projects/index.html" rel="next">
+<link href="../introduction/training.html" rel="next">
 <link href="../introduction/index.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Theoretischer Hintergrund</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Statistische Grundlagen</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -108,14 +127,29 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../introduction/theory.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Theoretischer Hintergrund</span></a>
+  <a href="../introduction/theory.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Statistische Grundlagen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../introduction/training.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Benutzerdefiniertes Modell</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../introduction/find-data.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Daten finden</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../introduction/pretrained-models.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Vortrainierte Modelle</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../projects/index.html" class="sidebar-item-text sidebar-link">Projekte</a>
+            <a href="../vorbereitung/index.html" class="sidebar-item-text sidebar-link">Vorbereitung</a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -123,7 +157,57 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../projects/eierml.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">EierML</span></a>
+  <a href="../vorbereitung/numpy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">numpy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/pandas.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">pandas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../vorbereitung/matplotlib.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">matplotlib</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../notebooks/index.html" class="sidebar-item-text sidebar-link">Machine Learning</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/preprocessing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Daten vorbereiten (<em>data preprocessing</em>)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/linear-regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Einfache lineare Regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../notebooks/scikit-learn.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">scikit-learn</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../projects/index.html" class="sidebar-item-text sidebar-link">Projekte</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../projects/eierml.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">EierML</span></a>
   </div>
 </li>
       </ul>
@@ -135,12 +219,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">Anhang</a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">Anhang</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="true">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../appendices/installation.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Installation</span></a>
@@ -158,14 +242,21 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Inhaltsverzeichnis</h2>
+   
+  <ul>
+  <li><a href="#decision-tree" id="toc-decision-tree" class="nav-link active" data-scroll-target="#decision-tree"><span class="toc-section-number">1.1</span>  Decision tree</a></li>
+  <li><a href="#literatur-zur-einführung" id="toc-literatur-zur-einführung" class="nav-link" data-scroll-target="#literatur-zur-einführung"><span class="toc-section-number">1.2</span>  Literatur zur Einführung</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Theoretischer Hintergrund</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Statistische Grundlagen</span></h1>
 </div>
 
 
@@ -179,14 +270,42 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Elit esse nulla cillum incididunt mollit sint cillum quis ad. Irure laboris officia dolore in eiusmod amet laborum. Cupidatat nisi commodo culpa occaecat tempor. Tempor mollit cillum ut qui dolor. Aliquip qui eu est quis cupidatat eiusmod ullamco.</p>
-<p>Adipisicing adipisicing cupidatat consequat ullamco amet culpa reprehenderit esse cillum. Mollit aliqua ex est cillum sit occaecat. Id nisi deserunt id ea amet enim ut ut enim non aute id. Nostrud culpa aliquip sit enim occaecat incididunt.</p>
-<p>Tempor qui ea fugiat Lorem tempor nostrud quis mollit. Ullamco excepteur eiusmod eu dolor quis esse. Velit occaecat exercitation sint Lorem nulla excepteur elit adipisicing ea. Dolore pariatur exercitation aliquip minim dolor deserunt minim amet dolor Lorem nostrud commodo id fugiat. Eu laborum non eiusmod et. Elit incididunt amet ullamco irure cillum labore nulla excepteur voluptate.</p>
+<p>Die Grundlagen verschiedener statistischer Funktionen und Vorgehensweisen zeige ich entlang der sehr guten Einführung zu Machine Learning <a href="https://www.w3schools.com/python/python_ml_getting_started.asp">auf der Seite der W3School</a>.</p>
+<p>Dort stehen die folgenden Konzepte im Mittelpunkt:</p>
+<ul>
+<li>Mittelwert, Medianwert, Modalwert (<em>mean</em>, <em>median</em>, <em>mode</em>)</li>
+<li>Standardabweichung</li>
+<li>Perzentilwert</li>
+<li>Datenverteilung</li>
+<li>Normalverteilung</li>
+<li>Lineare Regression</li>
+<li>Polynominale Regression</li>
+</ul>
+<p>In diesem Grundlagenskript arbeiten wir zunächst auf das Thema <em>Regression</em> hin, um anschließend noch Konzepte der <em>Klassifizierung</em> kennenzulernen.</p>
+<section id="decision-tree" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="decision-tree"><span class="header-section-number">1.1</span> Decision tree</h2>
+<ul>
+<li><a href="https://www.askpython.com/python/machine-learning-introduction" class="uri">https://www.askpython.com/python/machine-learning-introduction</a></li>
+</ul>
 <p>Proident tempor non exercitation qui. Qui magna commodo nostrud quis. Id nulla ex laboris elit ullamco ut sunt et cillum ut deserunt. Laboris anim veniam elit aliquip. Dolore anim voluptate eiusmod enim proident ea labore non id ex incididunt tempor dolor sit. Occaecat esse tempor proident elit laboris consequat cupidatat.</p>
-<p>Non nostrud sit nulla officia quis sunt laborum sunt ex deserunt ex quis et in. Sint non elit excepteur aliqua nisi laboris elit velit. Proident eu ipsum tempor voluptate officia ullamco cillum pariatur officia ea nostrud. Pariatur aliqua ullamco aute duis anim.</p>
-<p>Tempor amet elit tempor Lorem ipsum aliqua cupidatat. Ullamco nulla nisi velit non elit. Ullamco in ad eiusmod Lorem dolore ut fugiat. Consequat excepteur duis nulla laboris ut dolore officia do ut labore. Magna fugiat aute occaecat duis reprehenderit ipsum aute. Fugiat aliquip aliquip irure irure est aliqua culpa.</p>
+</section>
+<section id="literatur-zur-einführung" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="literatur-zur-einführung"><span class="header-section-number">1.2</span> Literatur zur Einführung</h2>
+<ul>
+<li><span class="citation" data-cites="kirsteEinleitungEntwicklungswegeZur2019">Kirste und Schürholz (<a href="../references.html#ref-kirsteEinleitungEntwicklungswegeZur2019" role="doc-biblioref">2019</a>)</span></li>
+<li><span class="citation" data-cites="stubbeNeueIntelligenzNeue2019">Stubbe, Wessels, und Zinke (<a href="../references.html#ref-stubbeNeueIntelligenzNeue2019" role="doc-biblioref">2019</a>)</span></li>
+</ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-kirsteEinleitungEntwicklungswegeZur2019" class="csl-entry" role="doc-biblioentry">
+Kirste, Moritz, und Markus Schürholz. 2019. <span>„Einleitung: Entwicklungswege zur KI“</span>. In <em>Künstliche Intelligenz</em>, herausgegeben von Volker Wittpahl, 21–35. <span>Berlin, Heidelberg</span>: <span>Springer Berlin Heidelberg</span>. <a href="https://doi.org/10.1007/978-3-662-58042-4_1">https://doi.org/10.1007/978-3-662-58042-4_1</a>.
+</div>
+<div id="ref-stubbeNeueIntelligenzNeue2019" class="csl-entry" role="doc-biblioentry">
+Stubbe, Julian, Jan Wessels, und Guido Zinke. 2019. <span>„Neue Intelligenz, neue Ethik?“</span> In <em>Künstliche Intelligenz</em>, herausgegeben von Volker Wittpahl, 239–54. <span>Berlin, Heidelberg</span>: <span>Springer Berlin Heidelberg</span>. <a href="https://doi.org/10.1007/978-3-662-58042-4_15">https://doi.org/10.1007/978-3-662-58042-4_15</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -285,6 +404,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return popup.innerHTML;
     });
   }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
 });
 </script>
 <nav class="page-navigation">
@@ -294,8 +429,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../projects/index.html" class="pagination-link">
-        <span class="nav-page-text">Projekte</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../introduction/training.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Benutzerdefiniertes Modell</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
