@@ -1,0 +1,3 @@
+# Fingerübungen
+
+Bevor es mit Machine Learning losgeht, empfehlen sich einige Fingerübungen mit zentralen Pythonbibliotheken.

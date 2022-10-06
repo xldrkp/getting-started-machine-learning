@@ -103,5 +103,20 @@
   },
   "machine-learning/index.qmd": {
     "index.html": "fa6b1487"
+  },
+  "preparation/index.qmd": {
+    "index.html": "f5cdcd01"
+  },
+  "preparation/matplotlib.ipynb": {
+    "matplotlib.html": "3005d9de"
+  },
+  "preparation/numpy.ipynb": {
+    "numpy.html": "ce23319f"
+  },
+  "preparation/pandas.ipynb": {
+    "pandas.html": "8ca77397"
+  },
+  "introduction/jupyter-usage.qmd": {
+    "jupyter-usage.html": "dca542c9"
   }
 }
