@@ -1,5 +1,7 @@
-# Einleitung {.unnumbered}
+# Willkommen! {.unnumbered}
 
-This is a Quarto book.
+Herzlich willkommen in diesem Crashkurs zu Machine Learning. 
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+![Quelle: "Wall decorations with colorful butterflies" von <a href="https://unsplash.com/@__drz__?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">__ drz __</a> on <a href="https://unsplash.com/collections/QQuimugFHZc/machine-learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ](./assets/img/welcome.jpg)
+

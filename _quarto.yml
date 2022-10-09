@@ -11,16 +11,12 @@ book:
   title: "Machine Learning mit Python"
   subtitle: "Einführung und Grundlagen"
   author: "Axel Dürkop"
-  date: "29. September 2022"
+  date: 10.13.2022
   chapters:
     - index.qmd
     - part: introduction/index.qmd
       chapters:
-        - introduction/theory.qmd
-        - introduction/training.qmd
         - introduction/jupyter-usage.qmd
-        - introduction/find-data.qmd
-        - introduction/pretrained-models.qmd
     - part: preparation/index.qmd
       chapters:
         - preparation/numpy.ipynb

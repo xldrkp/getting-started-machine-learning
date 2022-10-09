@@ -1,5 +1,5 @@
 # Machine Learning
 
-Sint enim enim aute do est dolor voluptate reprehenderit aliqua culpa anim ea. Fugiat aute ea quis mollit consectetur cillum veniam sunt nulla enim in irure dolor eu. Minim in laboris pariatur do aute quis cillum pariatur do nostrud ullamco nulla enim ullamco. Et ex in sit velit incididunt. Laboris proident Lorem cillum consectetur.
+Im Zentrum Ihrer Arbeit steht die Python-Bibliothek [scikit-learn](https://scikit-learn.org/stable/index.html). Mit ihr lassen sich die meisten Aufgabenstellungen im Machine Learning bewältigen. 
 
-Velit in voluptate irure consequat anim velit voluptate mollit duis aute velit. Proident ad id quis minim proident mollit eu elit reprehenderit dolore fugiat. Incididunt adipisicing pariatur deserunt ullamco elit qui nostrud qui aute. Exercitation amet est labore minim ad Lorem anim magna aute consequat aliquip adipisicing aliquip commodo. Aute quis laboris culpa nulla culpa cillum cillum pariatur fugiat consectetur sint velit.
+Für Deep Learning und künstliche neuronale Netze gibt es weitere spezialisierte und ausgereifte Bibliotheken, die in diesem Kurs nicht behandelt werden.

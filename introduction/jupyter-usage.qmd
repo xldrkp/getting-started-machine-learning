@@ -1,5 +1,26 @@
 # Einführung in JupyterLab 
 
-- Tastenbefehle
-- Menüs
-- Hilfe
+Das zentrale Werkzeug in diesem Kurs ist die Browsersoftware [JupyterLab](https://jupyter.org/). Die folgenden Themen stehen dabei im Mittelpunkt:
+
+- Installation und Benutzung
+- Tastenbefehle zur Beschleunigung der Arbeit
+- Funktionen der einzelnen Menüs
+- Hilfefunktionen sinnvoll nutzen
+
+[Die einschlägige JupyterLab-Dokumentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html) liefert zu all diesen Themen brauchbare Hinweise in englischer Sprache.
+
+## JupyterLab in aktuellem Ordner starten
+
+JupyterLab starten Sie in der Regel von der Kommandozeile aus (Ausnahme: Anaconda). Um gleich im richtigen Arbeitsverzeichnis zu landen, navigieren Sie zuerst in dieses. Dann können Sie folgendes Argument übergeben:
+
+```bash
+$ jupyterlab --notebook_dir=.
+```
+
+Dabei steht der `.` für das aktuelle Verzeichnis.
+
+## Weiterführende Informationen
+
+Ein gutes Video in deutscher Sprache zu JupyterLab gibt es meines Wissens noch nicht. Dafür aber einige zum Vorläufer der Software, Jupyter Notebook. Sie finden es auf YouTube unter <https://www.youtube.com/watch?v=1S4Cgtkxqhs>. 
+
+Viele weitere Videos sind in der offiziellen Dokumentation verlinkt. Probieren Sie auf YouTube die Echtzeitübersetzung aus, diese ist oft ganz passabel.
