@@ -1,3 +1,11 @@
 # Fingerübungen
 
 Bevor es mit Machine Learning losgeht, empfehlen sich einige Fingerübungen mit zentralen Pythonbibliotheken.
+
+## Automatische Übersetzung nutzen
+
+Die einschlägigen Dokumentationen und API-Referenzen im Bereich Künstliche Intelligenz (KI) und Machine Learning sind in englischer Sprache geschrieben. Das schreckt viele ab, sich mit dem Thema genauer auseinanderzusetzen. Es gibt aber eine Möglichkeit, sich die Sache zu vereinfachen. Lassen Sie sich die Webseiten automatisch übersetzen.
+
+![Quelle: Screenshot von <https://translate.google.de>](/assets/img/screenshot-google-translate.png)
+
+Prüfen Sie auch die Übersetzungsmöglichkeiten von <https://www.deepl.com/>, um die beste Entscheidung für sich zu treffen.

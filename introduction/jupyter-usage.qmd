@@ -9,6 +9,17 @@ Das zentrale Werkzeug in diesem Kurs ist die Browsersoftware [JupyterLab](https:
 
 [Die einschlägige JupyterLab-Dokumentation](https://jupyterlab.readthedocs.io/en/stable/user/interface.html) liefert zu all diesen Themen brauchbare Hinweise in englischer Sprache.
 
+## Installation
+
+Es gibt mindestens zwei verschiedene Möglichkeiten, JupyterLab zu installieren:
+
+1. im Rahmen der großen Data-Science-Distribution [Anaconda](https://www.anaconda.com/), die für die gängigen Betriebssysteme frei verfügbar ist.
+2. als Python-Modul
+
+Im Rahmen dieses Kurses reicht Option 2 aus. Entsprechend kann der Dokumentation [auf der Website des Projekts](https://jupyter.org/install) gefolgt werden.
+
+Sollten Sie dennoch Anaconda verwenden wollen, ist `conda` statt `pip` das Installationstool für weitere Python-Pakete.
+
 ## JupyterLab in aktuellem Ordner starten
 
 JupyterLab starten Sie in der Regel von der Kommandozeile aus (Ausnahme: Anaconda). Um gleich im richtigen Arbeitsverzeichnis zu landen, navigieren Sie zuerst in dieses. Dann können Sie folgendes Argument übergeben:
@@ -17,7 +28,7 @@ JupyterLab starten Sie in der Regel von der Kommandozeile aus (Ausnahme: Anacond
 $ jupyterlab --notebook_dir=.
 ```
 
-Dabei steht der `.` für das aktuelle Verzeichnis.
+Dabei steht `.` für das aktuelle Verzeichnis.
 
 ## Weiterführende Informationen
 

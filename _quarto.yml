@@ -28,13 +28,13 @@ book:
         - machine-learning/linear-regression.ipynb
         - machine-learning/multiple-linear-regression.ipynb
         - machine-learning/logistic-regression.ipynb
-    - part: projects/index.qmd
-      chapters:
-        - projects/eierml.qmd
+    # - part: projects/index.qmd
+    #   chapters:
+    #     - projects/eierml.qmd
     - references.qmd
-  appendices:
-    - appendices/installation.qmd
-    - appendices/further.qmd
+  # appendices:
+  #   - appendices/installation.qmd
+  #   - appendices/further.qmd
 bibliography: refs.bib
 
 format:
