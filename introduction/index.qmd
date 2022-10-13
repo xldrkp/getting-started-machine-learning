@@ -1,3 +1,5 @@
 # Einführung
 
 Im einführenden Teil beschäftigen Sie sich zunächst mit der Installation, Einrichtung und Benutzung von [JupyterLab](https://jupyter.org/). Außerdem installieren Sie [die Software git](https://git-scm.com/) auf Ihrem Rechner, um Material und Daten auf Ihren Rechner zu ziehen.
+
+![Quelle: "Wall decorations with colorful butterflies" von <a href="https://unsplash.com/@__drz__?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">__ drz __</a> on <a href="https://unsplash.com/collections/QQuimugFHZc/machine-learning?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>](/assets/img/welcome.jpg)

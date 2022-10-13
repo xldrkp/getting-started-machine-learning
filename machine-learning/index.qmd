@@ -3,3 +3,6 @@
 Im Zentrum Ihrer Arbeit steht die Python-Bibliothek [scikit-learn](https://scikit-learn.org/stable/index.html). Mit ihr lassen sich die meisten Aufgabenstellungen im Machine Learning bewältigen. 
 
 Für Deep Learning und künstliche neuronale Netze gibt es weitere spezialisierte und ausgereifte Bibliotheken, die in diesem Kurs nicht behandelt werden.
+
+![Quelle: <a href="https://unsplash.com/@crissyjarvis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Crissy Jarvis</a> on <a href="https://unsplash.com/s/photos/abacus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  ](/assets/img/crissy-jarvis-gdL-UZfnD3I-unsplash.jpg)
