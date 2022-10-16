@@ -14,27 +14,6 @@
     "text": "Quelle: “Wall decorations with colorful butterflies” von __ drz __ on Unsplash"
   },
   {
-    "objectID": "introduction/theory.html",
-    "href": "introduction/theory.html",
-    "title": "1  Statistische Grundlagen",
-    "section": "",
-    "text": "Die Grundlagen verschiedener statistischer Funktionen und Vorgehensweisen zeige ich entlang der sehr guten Einführung zu Machine Learning auf der Seite der W3School.\nDort stehen die folgenden Konzepte im Mittelpunkt:\nIn diesem Grundlagenskript arbeiten wir zunächst auf das Thema Regression hin, um anschließend noch Konzepte der Klassifizierung kennenzulernen."
-  },
-  {
-    "objectID": "introduction/theory.html#decision-tree",
-    "href": "introduction/theory.html#decision-tree",
-    "title": "1  Statistische Grundlagen",
-    "section": "1.1 Decision tree",
-    "text": "1.1 Decision tree\n\nhttps://www.askpython.com/python/machine-learning-introduction\n\nProident tempor non exercitation qui. Qui magna commodo nostrud quis. Id nulla ex laboris elit ullamco ut sunt et cillum ut deserunt. Laboris anim veniam elit aliquip. Dolore anim voluptate eiusmod enim proident ea labore non id ex incididunt tempor dolor sit. Occaecat esse tempor proident elit laboris consequat cupidatat."
-  },
-  {
-    "objectID": "introduction/theory.html#literatur-zur-einführung",
-    "href": "introduction/theory.html#literatur-zur-einführung",
-    "title": "1  Statistische Grundlagen",
-    "section": "1.2 Literatur zur Einführung",
-    "text": "1.2 Literatur zur Einführung\n\nKirste und Schürholz (2019)\nStubbe, Wessels, und Zinke (2019)\n\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nStubbe, Julian, Jan Wessels, und Guido Zinke. 2019. „Neue Intelligenz, neue Ethik?“ In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 239–54. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_15."
-  },
-  {
     "objectID": "introduction/jupyter-usage.html",
     "href": "introduction/jupyter-usage.html",
     "title": "1  Einführung in JupyterLab",
@@ -42,18 +21,39 @@
     "text": "Das zentrale Werkzeug in diesem Kurs ist die Browsersoftware JupyterLab. Die folgenden Themen stehen dabei im Mittelpunkt:\nDie einschlägige JupyterLab-Dokumentation liefert zu all diesen Themen brauchbare Hinweise in englischer Sprache."
   },
   {
-    "objectID": "introduction/find-data.html",
-    "href": "introduction/find-data.html",
-    "title": "2  Daten finden",
-    "section": "",
-    "text": "https://hub.packtpub.com/best-machine-learning-datasets-for-beginners/"
+    "objectID": "introduction/jupyter-usage.html#installation",
+    "href": "introduction/jupyter-usage.html#installation",
+    "title": "1  Einführung in JupyterLab",
+    "section": "1.1 Installation",
+    "text": "1.1 Installation\nEs gibt mindestens zwei verschiedene Möglichkeiten, JupyterLab zu installieren:\n\nim Rahmen der großen Data-Science-Distribution Anaconda, die für die gängigen Betriebssysteme frei verfügbar ist.\nals Python-Modul\n\nIm Rahmen dieses Kurses reicht Option 2 aus. Entsprechend kann der Dokumentation auf der Website des Projekts gefolgt werden.\nSollten Sie dennoch Anaconda verwenden wollen, ist conda statt pip das Installationstool für weitere Python-Pakete."
   },
   {
-    "objectID": "introduction/pretrained-models.html",
-    "href": "introduction/pretrained-models.html",
-    "title": "3  Vortrainierte Modelle",
+    "objectID": "introduction/jupyter-usage.html#jupyterlab-in-aktuellem-ordner-starten",
+    "href": "introduction/jupyter-usage.html#jupyterlab-in-aktuellem-ordner-starten",
+    "title": "1  Einführung in JupyterLab",
+    "section": "1.2 JupyterLab in aktuellem Ordner starten",
+    "text": "1.2 JupyterLab in aktuellem Ordner starten\nJupyterLab starten Sie in der Regel von der Kommandozeile aus (Ausnahme: Anaconda). Um gleich im richtigen Arbeitsverzeichnis zu landen, navigieren Sie zuerst in dieses. Dann können Sie folgendes Argument übergeben:\n$ jupyterlab --notebook_dir=.\nDabei steht . für das aktuelle Verzeichnis."
+  },
+  {
+    "objectID": "introduction/jupyter-usage.html#weiterführende-informationen",
+    "href": "introduction/jupyter-usage.html#weiterführende-informationen",
+    "title": "1  Einführung in JupyterLab",
+    "section": "1.3 Weiterführende Informationen",
+    "text": "1.3 Weiterführende Informationen\nEin gutes Video in deutscher Sprache zu JupyterLab gibt es meines Wissens noch nicht. Dafür aber einige zum Vorläufer der Software, Jupyter Notebook. Sie finden es auf YouTube unter https://www.youtube.com/watch?v=1S4Cgtkxqhs.\nViele weitere Videos sind in der offiziellen Dokumentation verlinkt. Probieren Sie auf YouTube die Echtzeitübersetzung aus, diese ist oft ganz passabel."
+  },
+  {
+    "objectID": "preparation/index.html",
+    "href": "preparation/index.html",
+    "title": "Fingerübungen",
     "section": "",
-    "text": "https://www.tensorflow.org/js/models\nhttps://firebase.google.com/docs/ml-kit\nhttps://tfhub.dev/"
+    "text": "Bevor es mit Machine Learning losgeht, empfehlen sich einige Fingerübungen mit zentralen Pythonbibliotheken."
+  },
+  {
+    "objectID": "preparation/index.html#automatische-übersetzung-nutzen",
+    "href": "preparation/index.html#automatische-übersetzung-nutzen",
+    "title": "Fingerübungen",
+    "section": "Automatische Übersetzung nutzen",
+    "text": "Automatische Übersetzung nutzen\nDie einschlägigen Dokumentationen und API-Referenzen im Bereich Künstliche Intelligenz (KI) und Machine Learning sind in englischer Sprache geschrieben. Das schreckt viele ab, sich mit dem Thema genauer auseinanderzusetzen. Es gibt aber eine Möglichkeit, sich die Sache zu vereinfachen. Lassen Sie sich die Webseiten automatisch übersetzen.\n\n\n\nQuelle: Screenshot von https://translate.google.de\n\n\nPrüfen Sie auch die Übersetzungsmöglichkeiten von https://www.deepl.com/, um die beste Entscheidung für sich zu treffen."
   },
   {
     "objectID": "preparation/numpy.html",
@@ -63,18 +63,25 @@
     "text": "numpy ist eine sehr schnelle Bibliothek für Python, mit der hauptsächlich Operationen auf mehrdimensionalen Arrays ausgeführt werden."
   },
   {
-    "objectID": "preparation/numpy.html#einfache-statistische-funktionen",
-    "href": "preparation/numpy.html#einfache-statistische-funktionen",
+    "objectID": "preparation/numpy.html#einführung-in-numpy",
+    "href": "preparation/numpy.html#einführung-in-numpy",
     "title": "2  numpy",
-    "section": "2.1 Einfache statistische Funktionen",
-    "text": "2.1 Einfache statistische Funktionen\nhttps://www.w3schools.com/python/python_ml_mean_median_mode.asp\n\n### Mean\n\n\n#!pip install numpy\n\n\nspeed = [99,86,87,88,111,86,103,87,94,78,77,85,86]\n\n\n2.1.1 Mean (Mittelwert)\n\nimport numpy as np\n\n\nx = np.median(speed)\nx\n\n87.0"
+    "section": "2.1 Einführung in numpy",
+    "text": "2.1 Einführung in numpy\nEs gibt viele gute Tutorials und Anleitungen für numpy im Netz. Empfehlenswert ist hierbei die Einheit in der w3schools. Das Übertragen der Beispiele in ein Jupyter Notebook hilft, die neue Entwicklungsumgebung besser kennenzulernen. Sie können natürlich auch direkt auf der Webseite der w3schools die Beispiele ausführen."
   },
   {
-    "objectID": "preparation/numpy.html#übungen-zum-auswählen-von-daten-aus-einer-tabelle",
-    "href": "preparation/numpy.html#übungen-zum-auswählen-von-daten-aus-einer-tabelle",
+    "objectID": "preparation/numpy.html#einfache-statistische-funktionen-mit-numpy",
+    "href": "preparation/numpy.html#einfache-statistische-funktionen-mit-numpy",
     "title": "2  numpy",
-    "section": "2.3 Übungen zum Auswählen von Daten aus einer Tabelle",
-    "text": "2.3 Übungen zum Auswählen von Daten aus einer Tabelle\nHier geht es vornehmlich um die Methode iloc in numpy und pandas.\nhttps://pandas.pydata.org/docs/reference/api/pandas.DataFrame.iloc.html?highlight=iloc#pandas.DataFrame.iloc"
+    "section": "2.2 Einfache statistische Funktionen mit numpy",
+    "text": "2.2 Einfache statistische Funktionen mit numpy\nEbenfalls auf den Seiten der w3schools sind einige Beispiele zu grundlegenden statistischen Funktionen zu finden. Hierbei sind vor allem die folgenden wichtig für das Verständnis der kommenden Konzepte:\n\nMittelwert\nMedian\nStandardabweichung"
+  },
+  {
+    "objectID": "preparation/numpy.html#video-zu-statistischen-grundlagen",
+    "href": "preparation/numpy.html#video-zu-statistischen-grundlagen",
+    "title": "2  numpy",
+    "section": "2.3 Video zu statistischen Grundlagen",
+    "text": "2.3 Video zu statistischen Grundlagen\nDie Wissenschaftlerin Mai Thi Nguyen-Kim hat auf YouTube ein Video veröffentlicht, in dem sie einige statistische Grundfunktionen erläutert."
   },
   {
     "objectID": "preparation/matplotlib.html",
@@ -119,11 +126,18 @@
     "text": "pandas ist der Standard für allgemeine Operationen zur Datenbereinigung und -vorbereitung geworden. Sie können mit pandas viele Dinge tun (und besser!), die Sie vielleicht bisher mit einem Tabellenkalkulationsprogramm erledigt haben."
   },
   {
-    "objectID": "preparation/pandas.html#normalisierung-vs.-standardisierung",
-    "href": "preparation/pandas.html#normalisierung-vs.-standardisierung",
+    "objectID": "preparation/pandas.html#einführung-in-pandas",
+    "href": "preparation/pandas.html#einführung-in-pandas",
     "title": "4  pandas",
-    "section": "4.2 Normalisierung vs. Standardisierung",
-    "text": "4.2 Normalisierung vs. Standardisierung\nhttps://www.statology.org/standardization-vs-normalization/"
+    "section": "4.1 Einführung in pandas",
+    "text": "4.1 Einführung in pandas\nAuch zu pandas existieren zahlreiche Tutorials im Netz sowie Videos und Kurse. Sie können zum Warmwerden zunächst auch die Beispiele der w3schools durcharbeiten, da sie alles Notwendige für die folgenden Schritte enthalten."
+  },
+  {
+    "objectID": "preparation/pandas.html#kompetenzcheck",
+    "href": "preparation/pandas.html#kompetenzcheck",
+    "title": "4  pandas",
+    "section": "4.2 Kompetenzcheck",
+    "text": "4.2 Kompetenzcheck\nAm Ende können Sie auch eine abschließende Übung machen, um Ihren Lernfortschritt zu überprüfen."
   },
   {
     "objectID": "machine-learning/index.html",
@@ -301,39 +315,11 @@
     "text": "7.9 Eine Vorhersage treffen\nWeil es jetzt mehrere Features gibt, ist das Zeichnen eine mehrdimensionalen Graphen nicht möglich. Daher werden im Folgenden die Profite aus den Trainingsdaten mit denen aus dem Testset verglichen. Hierbei kann die Güte des Modells erneut an der Abweichung der vorhergesagten zu den Testwerten gemessen werden.\n\ny_pred = regressor.predict(X_test)\nnp.set_printoptions(precision=2)\nprint(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_pred),1)), 1))\n\n[[103015.2  103282.38]\n [132582.28 144259.4 ]\n [132447.74 146121.95]\n [ 71976.1   77798.83]\n [178537.48 191050.39]\n [116161.24 105008.31]\n [ 67851.69  81229.06]\n [ 98791.73  97483.56]\n [113969.44 110352.25]\n [167921.07 166187.94]]"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projekte",
-    "section": "",
-    "text": "Reprehenderit est ea labore nulla ullamco aliqua. Do minim magna est aliqua. Nostrud exercitation ea voluptate aliquip mollit non tempor ullamco quis sit tempor ad qui veniam. Et veniam ad enim laboris commodo anim. Lorem sit enim in tempor nisi commodo commodo cillum eiusmod sint ex anim. Dolor duis qui deserunt cupidatat pariatur elit nostrud aliqua ut sint nulla qui sint.\nOfficia Lorem sint voluptate dolore exercitation sit non ea anim minim laboris veniam veniam. Non aliqua eiusmod reprehenderit ut tempor ad consectetur Lorem. Nulla pariatur dolor sit officia veniam aliquip irure laboris. Nulla ipsum nostrud adipisicing labore sit. Dolore dolore pariatur sint minim aliquip veniam cupidatat reprehenderit nostrud. In laboris laboris tempor ex pariatur. Dolore anim ullamco quis duis mollit eiusmod nostrud qui in culpa ut ex.\nCillum reprehenderit proident mollit eu esse laborum laboris qui. Id tempor non adipisicing id veniam voluptate mollit enim culpa dolor eiusmod sint et. Dolore ea elit voluptate pariatur velit mollit magna eu dolor irure. Laborum consequat velit et adipisicing excepteur excepteur magna in tempor est ipsum exercitation irure. Non dolore excepteur nulla ut sint non exercitation ex ad anim voluptate voluptate cupidatat aliqua. Laboris labore minim deserunt anim tempor eiusmod ut. Duis nostrud cupidatat incididunt nostrud in aliquip est exercitation nulla aute sit deserunt incididunt.\nCulpa aliquip ad aliqua ex nulla amet minim. Veniam occaecat aliqua dolor qui ipsum sit culpa in ea est ad. Voluptate eu non culpa ea consectetur culpa et enim non labore consectetur id ad. Pariatur et ipsum nisi amet eu dolore in ex ipsum. Pariatur amet anim incididunt excepteur dolore excepteur esse amet reprehenderit aliquip incididunt mollit."
-  },
-  {
-    "objectID": "projects/eierml.html",
-    "href": "projects/eierml.html",
-    "title": "14  EierML",
-    "section": "",
-    "text": "Repository klonen"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Literatur",
-    "section": "",
-    "text": "Kirste, Moritz, and Markus Schürholz. 2019. “Einleitung:\nEntwicklungswege zur KI.” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 21–35. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, ed. 2019. Künstliche Intelligenz. Technologien\n Anwendung  Gesellschaft. Berlin,\nHeidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
-  },
-  {
-    "objectID": "appendices/installation.html",
-    "href": "appendices/installation.html",
-    "title": "Appendix A — Installation",
-    "section": "",
-    "text": "Eu dolore proident sint voluptate. Elit consectetur labore culpa duis Lorem elit irure esse ad. Velit laboris velit proident aliquip deserunt nostrud reprehenderit in aute proident tempor non. Incididunt irure adipisicing qui occaecat id laboris commodo aliquip ea ipsum nostrud nulla aute.\nAute consequat commodo eu sit do non in irure ex nostrud nisi exercitation. Voluptate anim ad in excepteur labore dolor irure reprehenderit ipsum nulla aliquip ex nostrud consequat. Labore esse esse enim sit duis reprehenderit ea nostrud cupidatat officia ullamco magna aliquip elit. Aute anim eiusmod minim sunt culpa enim qui sit irure tempor commodo.\nIncididunt occaecat do incididunt ea nostrud sit ipsum nisi dolore eiusmod duis. Nisi velit id anim sunt duis tempor Lorem minim nostrud laborum exercitation. In id et eiusmod cupidatat veniam ex laboris laboris qui. Eu officia voluptate non cillum esse eiusmod nostrud eiusmod. Amet occaecat non est dolor laboris dolore ut laboris adipisicing qui adipisicing. Qui eu minim exercitation sunt laborum nisi qui aute.\nCulpa culpa quis velit laboris aliquip qui tempor fugiat. Ipsum ullamco quis Lorem labore fugiat. Aliqua eu anim ex laborum ad. Proident consequat sint dolor culpa excepteur pariatur dolor tempor laborum sunt laborum voluptate cupidatat laborum. Commodo sit esse voluptate labore eu non ea ut nisi ut sunt. Quis veniam in sint reprehenderit ut sunt occaecat sint."
-  },
-  {
-    "objectID": "appendices/further.html",
-    "href": "appendices/further.html",
-    "title": "Appendix B — Weiterführende Informationen",
-    "section": "",
-    "text": "tbd"
+    "objectID": "machine-learning/multiple-linear-regression.html#eine-vorhersage-mit-neuen-daten-machen",
+    "href": "machine-learning/multiple-linear-regression.html#eine-vorhersage-mit-neuen-daten-machen",
+    "title": "7  Multiple lineare Regression",
+    "section": "7.10 Eine Vorhersage mit neuen Daten machen",
+    "text": "7.10 Eine Vorhersage mit neuen Daten machen\n\nregressor.predict([[0.0, 1.0, 0.0, 66051.52, 182645.56, 118148.2]])\n\narray([103015.2])"
   },
   {
     "objectID": "machine-learning/logistic-regression.html",
@@ -371,20 +357,6 @@
     "text": "8.4 Abhängigen Vektor bestimmen\nAnschließend wird die letzte Spalte als Vektor ausgewählt. Diese Werte sollen vorhergesagt werden.\n\ny = dataset.iloc[:, -1].values"
   },
   {
-    "objectID": "machine-learning/logistic-regression.html#fehlende-daten-berücksichtigen",
-    "href": "machine-learning/logistic-regression.html#fehlende-daten-berücksichtigen",
-    "title": "12  Logistische Regression",
-    "section": "12.5 Fehlende Daten berücksichtigen",
-    "text": "12.5 Fehlende Daten berücksichtigen\nWenn wenige Daten fehlen, können diese Datensätze in der Regel ignoriert bzw. entfernt werden. Fehlen in vielen Datensätzen Daten, gibt es verschiedene Strategien, diese zu ersetzen. Eine davon ist, den Mittelwert aus den vorhandenen Daten zu bilden. Hierfür stellt scikit-learn ein Verfahren zur Verfügung.\n\nfrom sklearn.impute import SimpleImputer\nimputer = SimpleImputer(missing_values=np.nan, strategy='mean')\nimputer.fit(X[:, 1:3])\nX[:, 1:3] = imputer.transform(X[:, 1:3])\n\n\nprint(X)\n\n[['Frankreich' 44.0 72000.0]\n ['Griechenland' 27.0 48000.0]\n ['Deutschland' 30.0 54000.0]\n ['Griechenland' 38.0 61000.0]\n ['Deutschland' 40.0 63777.77777777778]\n ['Frankreich' 35.0 58000.0]\n ['Griechenland' 38.77777777777778 52000.0]\n ['Frankreich' 48.0 79000.0]\n ['Deutschland' 50.0 83000.0]\n ['Frankreich' 37.0 67000.0]]\n\n\n\n\n\n\n\n\nAufgabe\n\n\n\nRecherchieren Sie verwendeten Klassen und Methoden in der Dokumentation von scikit-learn."
-  },
-  {
-    "objectID": "machine-learning/logistic-regression.html#kategorien-in-den-daten-kodieren",
-    "href": "machine-learning/logistic-regression.html#kategorien-in-den-daten-kodieren",
-    "title": "12  Logistische Regression",
-    "section": "12.6 Kategorien in den Daten kodieren",
-    "text": "12.6 Kategorien in den Daten kodieren\nDamit der Algorithmus die Daten schnell und eindeutig verarbeiten kann, müssen Textwerte als Zahlenwerte kodiert werden, hier also die Länder. Ein gängiges Verfahren ist hierbei, binäre Vektoren aus den möglichen Kombinationen der Kategorien zu erstellen. Bei diesem Vorgehen werden neue Spalten angelegt, die diese Vektoren abbilden. Lesen Sie hierzu auch den Artikel über One Hot Encoding, wie dieses Verfahren genannt wird.\nDa im vorliegenden Datenset sowohl in den unabhängigen als auch in der abhängigen Variable kategorische Daten vorliegen, ist der Vorgang zweimal notwendig.\n\n12.6.1 Die unabhängige Variable kodieren\nAuch hierfür werden wieder Methoden von scikit-learn verwendet.\n\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import OneHotEncoder\nct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')\nX = np.array(ct.fit_transform(X))\n\n\nprint(ct)\n\nColumnTransformer(remainder='passthrough',\n                  transformers=[('encoder', OneHotEncoder(), [0])])\n\n\n\nprint(X)\n\n[[0.0 1.0 0.0 44.0 72000.0]\n [0.0 0.0 1.0 27.0 48000.0]\n [1.0 0.0 0.0 30.0 54000.0]\n [0.0 0.0 1.0 38.0 61000.0]\n [1.0 0.0 0.0 40.0 63777.77777777778]\n [0.0 1.0 0.0 35.0 58000.0]\n [0.0 0.0 1.0 38.77777777777778 52000.0]\n [0.0 1.0 0.0 48.0 79000.0]\n [1.0 0.0 0.0 50.0 83000.0]\n [0.0 1.0 0.0 37.0 67000.0]]\n\n\n\n\n12.6.2 Die abhängige Variable kodieren\nDa die Werte der abhängigen Variablen binär abgebildet werden können, ist hier One-Hot-Encoding nicht notwendig.\n\nfrom sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\ny = le.fit_transform(y)\n\n\nprint(y)\n\n[1 0 1 1 0 0 1 0 1 0]"
-  },
-  {
     "objectID": "machine-learning/logistic-regression.html#daten-aufteilen-in-training--und-testset",
     "href": "machine-learning/logistic-regression.html#daten-aufteilen-in-training--und-testset",
     "title": "8  Logistische Regression",
@@ -420,151 +392,11 @@
     "text": "8.9 Die Testergebnisse vorhersagen\n\ny_pred = classifier.predict(X_test)\nprint(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_pred),1)), 1))\n\n[[0 0]\n [0 0]\n [1 1]\n [1 1]\n [0 0]\n [0 0]\n [0 0]\n [1 1]\n [0 0]\n [1 0]\n [0 0]\n [0 0]\n [0 0]\n [1 1]\n [1 1]\n [1 1]\n [1 1]\n [0 0]\n [0 0]\n [1 1]\n [0 0]\n [1 1]\n [1 1]\n [0 0]\n [0 1]\n [0 0]\n [1 1]\n [1 0]\n [1 1]\n [1 0]\n [0 0]\n [0 0]\n [0 0]\n [1 1]\n [0 0]\n [0 0]\n [0 0]\n [0 0]\n [0 1]\n [0 0]\n [1 1]\n [1 1]\n [0 0]\n [0 0]\n [1 1]\n [0 1]\n [0 1]\n [1 1]\n [0 0]\n [1 1]\n [0 0]\n [0 0]\n [1 1]\n [0 1]\n [0 1]\n [0 0]\n [1 1]\n [0 0]\n [1 1]\n [1 1]\n [0 0]\n [0 0]\n [1 0]\n [0 0]\n [0 1]\n [1 1]\n [0 0]\n [0 0]\n [1 0]\n [0 0]\n [1 0]\n [0 0]\n [1 1]\n [0 0]\n [0 0]\n [1 1]\n [0 0]\n [0 0]\n [0 0]\n [0 0]\n [0 0]\n [0 1]\n [1 1]\n [0 0]\n [0 0]\n [0 0]\n [0 1]\n [0 0]\n [0 1]\n [0 0]\n [1 1]\n [1 1]\n [1 1]\n [0 0]\n [0 0]\n [1 1]\n [1 1]\n [0 1]\n [0 0]\n [0 0]]"
   },
   {
-    "objectID": "machine-learning/logistic-regression.html#confusion-matrix-ausgeben",
-    "href": "machine-learning/logistic-regression.html#confusion-matrix-ausgeben",
-    "title": "8  Logistische Regression",
-    "section": "8.10 Confusion Matrix ausgeben",
-    "text": "8.10 Confusion Matrix ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
-  },
-  {
-    "objectID": "machine-learning/logistic-regression.html#visualisierung-des-trainingsets",
-    "href": "machine-learning/logistic-regression.html#visualisierung-des-trainingsets",
-    "title": "12  Logistische Regression",
-    "section": "12.11 Visualisierung des Trainingsets",
-    "text": "12.11 Visualisierung des Trainingsets"
-  },
-  {
-    "objectID": "machine-learning/logistic-regression.html#visualisierung-des-testsets",
-    "href": "machine-learning/logistic-regression.html#visualisierung-des-testsets",
-    "title": "12  Logistische Regression",
-    "section": "12.12 Visualisierung des Testsets",
-    "text": "12.12 Visualisierung des Testsets"
-  },
-  {
-    "objectID": "preparation/index.html",
-    "href": "preparation/index.html",
-    "title": "Fingerübungen",
-    "section": "",
-    "text": "Bevor es mit Machine Learning losgeht, empfehlen sich einige Fingerübungen mit zentralen Pythonbibliotheken."
-  },
-  {
-    "objectID": "introduction/jupyter-usage.html#weiterführende-informationen",
-    "href": "introduction/jupyter-usage.html#weiterführende-informationen",
-    "title": "1  Einführung in JupyterLab",
-    "section": "1.3 Weiterführende Informationen",
-    "text": "1.3 Weiterführende Informationen\nEin gutes Video in deutscher Sprache zu JupyterLab gibt es meines Wissens noch nicht. Dafür aber einige zum Vorläufer der Software, Jupyter Notebook. Sie finden es auf YouTube unter https://www.youtube.com/watch?v=1S4Cgtkxqhs.\nViele weitere Videos sind in der offiziellen Dokumentation verlinkt. Probieren Sie auf YouTube die Echtzeitübersetzung aus, diese ist oft ganz passabel."
-  },
-  {
-    "objectID": "introduction/jupyter-usage.html#jupyterlab-in-aktuellem-ordner-starten",
-    "href": "introduction/jupyter-usage.html#jupyterlab-in-aktuellem-ordner-starten",
-    "title": "1  Einführung in JupyterLab",
-    "section": "1.2 JupyterLab in aktuellem Ordner starten",
-    "text": "1.2 JupyterLab in aktuellem Ordner starten\nJupyterLab starten Sie in der Regel von der Kommandozeile aus (Ausnahme: Anaconda). Um gleich im richtigen Arbeitsverzeichnis zu landen, navigieren Sie zuerst in dieses. Dann können Sie folgendes Argument übergeben:\n$ jupyterlab --notebook_dir=.\nDabei steht . für das aktuelle Verzeichnis."
-  },
-  {
-    "objectID": "preparation/numpy.html#einführung-in-numpy",
-    "href": "preparation/numpy.html#einführung-in-numpy",
-    "title": "2  numpy",
-    "section": "2.1 Einführung in numpy",
-    "text": "2.1 Einführung in numpy\nEs gibt viele gute Tutorials und Anleitungen für numpy im Netz. Empfehlenswert ist hierbei die Einheit in der w3schools. Das Übertragen der Beispiele in ein Jupyter Notebook hilft, die neue Entwicklungsumgebung besser kennenzulernen. Sie können natürlich auch direkt auf der Webseite der w3schools die Beispiele ausführen."
-  },
-  {
-    "objectID": "preparation/numpy.html#einfache-statistische-funktionen-mit-numpy",
-    "href": "preparation/numpy.html#einfache-statistische-funktionen-mit-numpy",
-    "title": "2  numpy",
-    "section": "2.2 Einfache statistische Funktionen mit numpy",
-    "text": "2.2 Einfache statistische Funktionen mit numpy\nEbenfalls auf den Seiten der w3schools sind einige Beispiele zu grundlegenden statistischen Funktionen zu finden. Hierbei sind vor allem die folgenden wichtig für das Verständnis der kommenden Konzepte:\n\nMittelwert\nMedian\nStandardabweichung"
-  },
-  {
-    "objectID": "preparation/pandas.html#einführung-in-pandas",
-    "href": "preparation/pandas.html#einführung-in-pandas",
-    "title": "4  pandas",
-    "section": "4.1 Einführung in pandas",
-    "text": "4.1 Einführung in pandas\nAuch zu pandas existieren zahlreiche Tutorials im Netz sowie Videos und Kurse. Sie können zum Warmwerden zunächst auch die Beispiele der w3schools durcharbeiten, da sie alles Notwendige für die folgenden Schritte enthalten."
-  },
-  {
-    "objectID": "preparation/pandas.html#kompetenzcheck",
-    "href": "preparation/pandas.html#kompetenzcheck",
-    "title": "4  pandas",
-    "section": "4.2 Kompetenzcheck",
-    "text": "4.2 Kompetenzcheck\nAm Ende können Sie auch eine abschließende Übung machen, um Ihren Lernfortschritt zu überprüfen."
-  },
-  {
-    "objectID": "machine-learning/multiple-linear-regression.html#eine-vorhersage-mit-neuen-daten-machen",
-    "href": "machine-learning/multiple-linear-regression.html#eine-vorhersage-mit-neuen-daten-machen",
-    "title": "7  Multiple lineare Regression",
-    "section": "7.10 Eine Vorhersage mit neuen Daten machen",
-    "text": "7.10 Eine Vorhersage mit neuen Daten machen\n\nregressor.predict([[0.0, 1.0, 0.0, 66051.52, 182645.56, 118148.2]])\n\narray([103015.2])"
-  },
-  {
-    "objectID": "preparation/index.html#eng",
-    "href": "preparation/index.html#eng",
-    "title": "Fingerübungen",
-    "section": "Eng",
-    "text": "Eng"
-  },
-  {
-    "objectID": "preparation/index.html#automatische-übersetzung-nutzen",
-    "href": "preparation/index.html#automatische-übersetzung-nutzen",
-    "title": "Fingerübungen",
-    "section": "Automatische Übersetzung nutzen",
-    "text": "Automatische Übersetzung nutzen\nDie einschlägigen Dokumentationen und API-Referenzen im Bereich Künstliche Intelligenz (KI) und Machine Learning sind in englischer Sprache geschrieben. Das schreckt viele ab, sich mit dem Thema genauer auseinanderzusetzen. Es gibt aber eine Möglichkeit, sich die Sache zu vereinfachen. Lassen Sie sich die Webseiten automatisch übersetzen.\n\n\n\nQuelle: Screenshot von https://translate.google.de\n\n\nPrüfen Sie auch die Übersetzungsmöglichkeiten von https://www.deepl.com/, um die beste Entscheidung für sich zu treffen."
-  },
-  {
-    "objectID": "introduction/jupyter-usage.html#section",
-    "href": "introduction/jupyter-usage.html#section",
-    "title": "1  Einführung in JupyterLab",
-    "section": "1.1 ",
-    "text": "1.1"
-  },
-  {
-    "objectID": "introduction/jupyter-usage.html#installation",
-    "href": "introduction/jupyter-usage.html#installation",
-    "title": "1  Einführung in JupyterLab",
-    "section": "1.1 Installation",
-    "text": "1.1 Installation\nEs gibt mindestens zwei verschiedene Möglichkeiten, JupyterLab zu installieren:\n\nim Rahmen der großen Data-Science-Distribution Anaconda, die für die gängigen Betriebssysteme frei verfügbar ist.\nals Python-Modul\n\nIm Rahmen dieses Kurses reicht Option 2 aus. Entsprechend kann der Dokumentation auf der Website des Projekts gefolgt werden.\nSollten Sie dennoch Anaconda verwenden wollen, ist conda statt pip das Installationstool für weitere Python-Pakete."
-  },
-  {
-    "objectID": "preparation/numpy.html#video-zu-statistischen-grundlagen",
-    "href": "preparation/numpy.html#video-zu-statistischen-grundlagen",
-    "title": "2  numpy",
-    "section": "2.3 Video zu statistischen Grundlagen",
-    "text": "2.3 Video zu statistischen Grundlagen\nDie Wissenschaftlerin Mai Thi Nguyen-Kim hat auf YouTube ein Video veröffentlicht, in dem sie einige statistische Grundfunktionen erläutert."
-  },
-  {
     "objectID": "machine-learning/logistic-regression.html#wahrheitsmatrix-confusion-matrix-ausgeben",
     "href": "machine-learning/logistic-regression.html#wahrheitsmatrix-confusion-matrix-ausgeben",
     "title": "8  Logistische Regression",
     "section": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben",
     "text": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
-  },
-  {
-    "objectID": "machine-learning/index.html#eine-kurze-geschichte-der-künstlichen-intelligenz-ki",
-    "href": "machine-learning/index.html#eine-kurze-geschichte-der-künstlichen-intelligenz-ki",
-    "title": "Machine Learning",
-    "section": "Eine kurze Geschichte der Künstlichen Intelligenz (KI)",
-    "text": "Eine kurze Geschichte der Künstlichen Intelligenz (KI)\nZu empfehlen ist der Themenband “Künstliche Intelligenz” von Wittpahl (2019). Darin führen Kirste und Schürholz (2019) ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.\n\n\n\nQuelle: Crissy Jarvis on Unsplash\n\n\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, Hrsg. 2019. Künstliche Intelligenz. Technologien  Anwendung  Gesellschaft. Berlin, Heidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
-  },
-  {
-    "objectID": "appendices/offene-fragen.html",
-    "href": "appendices/offene-fragen.html",
-    "title": "Appendix A — Antworten auf Fragen",
-    "section": "",
-    "text": "import numpy as np\n\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[1, 1:4])\n\n[7 8 9]\n\n\nHole von beiden Elementen [0:2] jeweils das dritte Element [2].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 2])\n\n[3 8]\n\n\nHole von beiden Elementen [0:2] jeweils die Elemente 2, 3 und 4 [1:4].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 1:4])\n\n[[2 3 4]\n [7 8 9]]"
-  },
-  {
-    "objectID": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
-    "href": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
-    "title": "Appendix A — Antworten auf Fragen",
-    "section": "A.2 Grafiken in matplotlib vergrößern",
-    "text": "A.2 Grafiken in matplotlib vergrößern\n\nimport matplotlib.pyplot as plt\n\n# Inches für Breite und Höhe\nplt.rcParams['figure.figsize'] = [12, 8]\n# Auflösung\nplt.rcParams['figure.dpi'] = 220 # 200 e.g. is really fine, but slower\n\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.xlabel('some other numbers')\nplt.show()"
-  },
-  {
-    "objectID": "appendices/offene-fragen.html#interaktive-visualisierungen",
-    "href": "appendices/offene-fragen.html#interaktive-visualisierungen",
-    "title": "Appendix A — Antworten auf Fragen",
-    "section": "A.3 Interaktive Visualisierungen",
-    "text": "A.3 Interaktive Visualisierungen\nWie hier für die Version 3.0 von JupyterLab beschrieben, muss zunächst mit pip das Paket ipympl installiert werden. Danach ist es am besten, nicht nur den Kernel neu zu starten, sondern JupyterLab einmal zu stoppen, neu zu starten und den Browser ebenfalls zu aktualisieren.\n\n#%pip install ipympl\n%matplotlib inline\n%matplotlib widget\n\nimport matplotlib.pyplot as plt\n\n\nplt.plot([1,2,3,4,5,6,7], [10, 50, 100, 23,15,28,45], linewidth = 3, c = 'g')"
   },
   {
     "objectID": "machine-learning/kaufabsicht.html",
@@ -651,13 +483,6 @@
     "text": "9.11 Die Testdaten vorhersagen\nWeil es jetzt mehrere Features gibt, ist das Zeichnen eine mehrdimensionalen Graphen nicht möglich. Daher werden im Folgenden die Profite aus den Trainingsdaten mit denen aus dem Testset verglichen. Hierbei kann die Güte des Modells erneut an der Abweichung der vorhergesagten zu den Testwerten gemessen werden.\n\nX_test\n\narray([[1.0, 0.0, 0.0, -1.3360768204591424, -0.8277899615678128],\n       [1.0, 0.0, 0.0, 1.9013400906533953, 2.02036871975873],\n       [1.0, 0.0, 0.0, 0.28263163509712647, 0.13250875091010228]],\n      dtype=object)\n\n\n\ny_pred = classifier.predict(X_test)\ny_pred\n\narray([0, 1, 0])\n\n\nUm die vorhergesagten und bekannten Daten nebeneinanderstellen zu können, wird das numpy-Array umgeformt:\n\nnp.set_printoptions(precision=2)\nprint(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)), 1))\n\n[[0 1]\n [1 1]\n [0 0]]"
   },
   {
-    "objectID": "machine-learning/kaufabsicht.html#confusion-matrix-ausgeben",
-    "href": "machine-learning/kaufabsicht.html#confusion-matrix-ausgeben",
-    "title": "9  Kaufabsicht vorhersagen",
-    "section": "9.12 Confusion Matrix ausgeben",
-    "text": "9.12 Confusion Matrix ausgeben\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[1 0]\n [2 0]]\n\n\n0.3333333333333333"
-  },
-  {
     "objectID": "machine-learning/kaufabsicht.html#wahrheitsmatrix-confusion-matrix-ausgeben",
     "href": "machine-learning/kaufabsicht.html#wahrheitsmatrix-confusion-matrix-ausgeben",
     "title": "9  Kaufabsicht vorhersagen",
@@ -665,39 +490,39 @@
     "text": "9.12 Wahrheitsmatrix (confusion matrix) ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Die Wahrheitsmatrix sieht aus wie folgt:\")\nprint(cm)\n# Die Rate der korrekten Vorhersagen\nprint(\"Der Accuracy Score beträgt {} %.\".format(accuracy_score(y_test, y_pred)*100))\n\nDie Wahrheitsmatrix sieht aus wie folgt:\n[[1 0]\n [1 1]]\nDer Accuracy Score beträgt 66.66666666666666 %."
   },
   {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Literatur",
+    "section": "",
+    "text": "Kirste, Moritz, and Markus Schürholz. 2019. “Einleitung:\nEntwicklungswege zur KI.” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 21–35. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, ed. 2019. Künstliche Intelligenz. Technologien\n Anwendung  Gesellschaft. Berlin,\nHeidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
+  },
+  {
+    "objectID": "appendices/offene-fragen.html",
+    "href": "appendices/offene-fragen.html",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "",
+    "text": "import numpy as np\n\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[1, 1:4])\n\n[7 8 9]\n\n\nHole von beiden Elementen [0:2] jeweils das dritte Element [2].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 2])\n\n[3 8]\n\n\nHole von beiden Elementen [0:2] jeweils die Elemente 2, 3 und 4 [1:4].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 1:4])\n\n[[2 3 4]\n [7 8 9]]"
+  },
+  {
+    "objectID": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
+    "href": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "A.2 Grafiken in matplotlib vergrößern",
+    "text": "A.2 Grafiken in matplotlib vergrößern\n\nimport matplotlib.pyplot as plt\n\n# Inches für Breite und Höhe\nplt.rcParams['figure.figsize'] = [12, 8]\n# Auflösung\nplt.rcParams['figure.dpi'] = 220 # 200 e.g. is really fine, but slower\n\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.xlabel('some other numbers')\nplt.show()"
+  },
+  {
+    "objectID": "appendices/offene-fragen.html#interaktive-visualisierungen",
+    "href": "appendices/offene-fragen.html#interaktive-visualisierungen",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "A.3 Interaktive Visualisierungen",
+    "text": "A.3 Interaktive Visualisierungen\nWie hier für die Version 3.0 von JupyterLab beschrieben, muss zunächst mit pip das Paket ipympl installiert werden. Danach ist es am besten, nicht nur den Kernel neu zu starten, sondern JupyterLab einmal zu stoppen, neu zu starten und den Browser ebenfalls zu aktualisieren.\n\n#%pip install ipympl\n%matplotlib inline\n%matplotlib widget\n\nimport matplotlib.pyplot as plt\n\n\nplt.plot([1,2,3,4,5,6,7], [10, 50, 100, 23,15,28,45], linewidth = 3, c = 'g')"
+  },
+  {
     "objectID": "appendices/hedgedoc.html",
     "href": "appendices/hedgedoc.html",
     "title": "Appendix B — Kollaboratives Pad",
     "section": "",
     "text": "Im Folgenden sind die Links aus dem kollaborativen Pad zur Veranstaltung aufgelistet."
-  },
-  {
-    "objectID": "appendices/hedgedoc.html#der-zweite-workshoptag-findet-online-statt",
-    "href": "appendices/hedgedoc.html#der-zweite-workshoptag-findet-online-statt",
-    "title": "Appendix B — Kollaboratives Pad",
-    "section": "B.1 Der zweite Workshoptag findet online statt",
-    "text": "B.1 Der zweite Workshoptag findet online statt\n\nTeamsraum am Freitag, 14.10.2022"
-  },
-  {
-    "objectID": "appendices/hedgedoc.html#erwartungen-an-den-workshop",
-    "href": "appendices/hedgedoc.html#erwartungen-an-den-workshop",
-    "title": "Appendix B — Kollaboratives Pad",
-    "section": "B.2 Erwartungen an den Workshop",
-    "text": "B.2 Erwartungen an den Workshop\n\nAm Ende der Veranstaltung möchte ich …\n… das Thema für meinen Unterricht aufbereiten können\nIdeen für KI im Unterricht und deren Umsetzung\nGute Ansätze für die Vermittlung des Machine Lerning Themas für den Unterricht haben.\nTools für KI im Unterricht\nEinen Einstieg für meinen Unterricht mit Python gefunden haben.\nEinführung in Python, neue Facetten im Bereich Maschinelles Lernen\nUnterrichtsideen\nEinstieg in Python\nneue Ideen für Unterrichtsinhalte\nEinsatzmöglichkeiten für JupterLab kennen lernen (Abgrenzung JupyterHub)\nEinen guten Überblick über Jupyter-Notebook, pandas, numpy, … bekommen und deren Anwendung."
-  },
-  {
-    "objectID": "appendices/hedgedoc.html#linktracker",
-    "href": "appendices/hedgedoc.html#linktracker",
-    "title": "Appendix B — Kollaboratives Pad",
-    "section": "B.3 Linktracker",
-    "text": "B.3 Linktracker\nIn der folgenden Liste können wir Quellen notieren, die wir mit anderen tauschen wollen.\n\nB.3.1 Donnerstag, 13.10.2022\n\nMatheformeln mit LaTeX\nStatistik-Exkurs mit Mai\n\n\nB.3.1.1 (Web)tools\n\nEmpfehlung für Bildschirm-Zoom und Kommentierung: Sysinternals-> ZoomIt (Microsoft aber frei verfügbar) -> ZoomIt\nhttps://openai.com/ Hier sind die beiden großen KIs “GPT-3” und “DALL-E 2” zum Ausprobieren. Man hat ein gewisses kostenloses Kontingent zur Verfügung, danach muss gezahlt werden.\nml5.js, Ausprobieren am Ende der Seite. Aufbauend auf p5.js ist ml5.js eine Bibliothekssammlung für ML-Anwendungen im Browser.\nRStudio Professionelle Umgebung zur Datenanalyse\nKI-Übersetzer deepL\n\n\n\nB.3.1.2 Python\n\nPython Flask Baukastensystem für Webserver-Anwendungen; Alternative ist Bottle, das nur mit einer Datei auskommt und Ähnliches kann wie Flask.\nSpotipy Python-Package für den Zugriff auf die Spotify-API\n\n\n\nB.3.1.3 JupyterLab\n\nJupyterLab Benutzeroberfläche erklärt\nJupyterLab mit Docker nutzen\n\n\n\nB.3.1.4 JupyterHub\n\nBlogbeitrag meines Kollegen Marvin Kastner zu Erfahrungen mit JupyterHub in Prüfungen\nInstallationshinweise für einen eigenen JupyterHub (sehr TUHH-bezogen)\n\n\n\nB.3.1.5 Matplotlib\n\nEinführungstutorial\n\nimport matplotlib.pyplot as plt\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.show()\n\n\nB.3.1.6 Pandas\n\nEinführungstutorial\n\n\n\n\nB.3.2 Freitag, 14.10.2022\n\nKaggle Daten und Code für Data Science. Auch Challenges von Data Scientists werden hier ausgetragen. Ein Beispiel, an dem ich beteiligt war: Hack dich schlau! Die lange Nacht der Strompreisprognosen\n\n\n\nDatenmaterial zum Download\n\n\n\n“Künstliche Intelligenz (Open Access)”\nhttps://www.heise.de/hintergrund/Wie-sich-Kuenstler-gegen-die-Nutzung-ihrer-Bilder-als-KI-Vorlagen-wehren-7306494.html\nhttps://openfuture.eu/publication/ai_commons-white-paper/\nhttps://plotly.com/\nhttps://anvil.works/\nhttps://talkpython.fm/\n\nimport matplotlib.pyplot as plt\n\n# Inches für Breite und Höhe\nplt.rcParams['figure.figsize'] = [12, 8]\n# Auflösung\nplt.rcParams['figure.dpi'] = 120 # 200 e.g. is really fine, but slower\n\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.xlabel('some other numbers')\nplt.show()\n\nhttps://forms.technologyreview.com/in-machines-we-trust/\nhttps://www.kaggle.com/c/hackathontuhh\nhttps://scikit-learn.org/stable/\nhttps://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer\nExplainable AI\n\nBespiel: Gehalt aus Berufserfahrung vorhersagen\nTrainingsset\nplt.scatter(X_train, y_train, color = 'red')\nplt.plot(X_train, regressor.predict(X_train), color = 'blue')\nplt.title('Gehalt vs. Erfahrung (Trainingset)')\nplt.xlabel('Berufserfahrung in Jahren')\nplt.ylabel('Gehalt')\nplt.show()\nTestset\nplt.scatter(X_test, y_test, color = 'red')\n# Hier muss nichts ersetzt werden!\nplt.plot(X_train, regressor.predict(X_train), color = 'blue')\nplt.title('Gehalt vs. Erfahrung (Testset)')\nplt.xlabel('Berufserfahrung in Jahren')\nplt.ylabel('Gehalt')\nplt.show()"
-  },
-  {
-    "objectID": "appendices/hedgedoc.html#kontakt",
-    "href": "appendices/hedgedoc.html#kontakt",
-    "title": "Appendix B — Kollaboratives Pad",
-    "section": "B.9 Kontakt",
-    "text": "B.9 Kontakt\n\nAxel Dürkop\nme@axel-duerkop.de\nhttps://axel-duerkop.de/"
   },
   {
     "objectID": "appendices/hedgedoc.html#allgemeines",
@@ -712,6 +537,13 @@
     "title": "Appendix B — Kollaboratives Pad",
     "section": "B.2 (Web)tools",
     "text": "B.2 (Web)tools\n\nEmpfehlung für Bildschirm-Zoom und Kommentierung: Sysinternals-> ZoomIt (Microsoft aber frei verfügbar) -> ZoomIt\nhttps://openai.com/ Hier sind die beiden großen KIs “GPT-3” und “DALL-E 2” zum Ausprobieren. Man hat ein gewisses kostenloses Kontingent zur Verfügung, danach muss gezahlt werden.\nml5.js, Ausprobieren am Ende der Seite. Aufbauend auf p5.js ist ml5.js eine Bibliothekssammlung für ML-Anwendungen im Browser.\nRStudio Professionelle Umgebung zur Datenanalyse\nKI-Übersetzer deepL\nKaggle Daten und Code für Data Science. Auch Challenges von Data Scientists werden hier ausgetragen. Ein Beispiel, an dem ich beteiligt war: Hack dich schlau! Die lange Nacht der Strompreisprognosen\nPlotly zur interaktiven Visualisierung\nAnvil: HTML und CSS mit Python schreiben"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#podcasts",
+    "href": "appendices/hedgedoc.html#podcasts",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.3 Podcasts",
+    "text": "B.3 Podcasts\n\nIn Machines We Trust\nDer Python-Podcast"
   },
   {
     "objectID": "appendices/hedgedoc.html#python",
@@ -747,12 +579,5 @@
     "title": "Appendix B — Kollaboratives Pad",
     "section": "B.8 Pandas",
     "text": "B.8 Pandas\n\nEinführungstutorial"
-  },
-  {
-    "objectID": "appendices/hedgedoc.html#podcasts",
-    "href": "appendices/hedgedoc.html#podcasts",
-    "title": "Appendix B — Kollaboratives Pad",
-    "section": "B.3 Podcasts",
-    "text": "B.3 Podcasts\n\nIn Machines We Trust\nDer Python-Podcast"
   }
 ]
