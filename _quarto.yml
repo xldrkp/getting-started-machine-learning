@@ -8,6 +8,8 @@ project:
     browser: false
 
 book:
+  page-footer: 
+    center: 'Copyright 2022, Axel Dürkop. Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.</p>'
   title: "Machine Learning mit Python"
   subtitle: "Einführung und Grundlagen"
   author: "Axel Dürkop"
@@ -28,13 +30,11 @@ book:
         - machine-learning/linear-regression.ipynb
         - machine-learning/multiple-linear-regression.ipynb
         - machine-learning/logistic-regression.ipynb
-    # - part: projects/index.qmd
-    #   chapters:
-    #     - projects/eierml.qmd
+        - machine-learning/kaufabsicht.ipynb
     - references.qmd
-  # appendices:
-  #   - appendices/installation.qmd
-  #   - appendices/further.qmd
+  appendices:
+    - appendices/offene-fragen.ipynb
+    - appendices/hedgedoc.md
 bibliography: refs.bib
 
 format:

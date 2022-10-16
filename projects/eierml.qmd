@@ -1,7 +1,0 @@
-# EierML
-
-https://eierml.ml-projects.de/machine-learning/
-
-
-
-1. [Repository klonen]()

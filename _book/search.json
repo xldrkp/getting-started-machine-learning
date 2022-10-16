@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Machine Learning mit Python",
     "section": "",
-    "text": "Herzlich willkommen in diesem Crashkurs zu Machine Learning.\n\n\n\nQuelle: “A man and a woman teaching a giant computer old-fashioned” by DALL-E 2\n\n\n\n\nZu empfehlen ist der Themenband “Künstliche Intelligenz” von Wittpahl (2019). Darin führen Kirste und Schürholz (2019) ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, Hrsg. 2019. Künstliche Intelligenz. Technologien  Anwendung  Gesellschaft. Berlin, Heidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
+    "text": "Herzlich willkommen in diesem Crashkurs zu Machine Learning.\n\n\n\nQuelle: “A man and a woman teaching a giant computer old-fashioned” by DALL-E 2"
   },
   {
     "objectID": "introduction/index.html",
@@ -130,75 +130,75 @@
     "href": "machine-learning/index.html",
     "title": "Machine Learning",
     "section": "",
-    "text": "Für Deep Learning und künstliche neuronale Netze gibt es weitere spezialisierte und ausgereifte Bibliotheken, die in diesem Kurs nicht behandelt werden.\n\n\n\nQuelle: Crissy Jarvis on Unsplash"
+    "text": "Für Deep Learning und künstliche neuronale Netze gibt es weitere spezialisierte und ausgereifte Bibliotheken, die in diesem Kurs nicht behandelt werden.\nZu empfehlen ist der Themenband “Künstliche Intelligenz” von Wittpahl (2019). Darin führen Kirste und Schürholz (2019) ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.\n\n\n\nQuelle: Crissy Jarvis on Unsplash\n\n\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, Hrsg. 2019. Künstliche Intelligenz. Technologien  Anwendung  Gesellschaft. Berlin, Heidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
   },
   {
     "objectID": "machine-learning/preprocessing.html",
     "href": "machine-learning/preprocessing.html",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "",
     "text": "Führen Sie die folgende Zelle aus, um zu überprüfen, dass alle notwendigen Bibliotheken installiert sind.\n\n#%pip install sklearn\n#%pip install numpy\n#%pip install pandas\n#%pip install matplotlib"
   },
   {
     "objectID": "machine-learning/preprocessing.html#bibliotheken-importieren",
     "href": "machine-learning/preprocessing.html#bibliotheken-importieren",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.2 Bibliotheken importieren",
     "text": "5.2 Bibliotheken importieren\nDie folgenden Bibliotheken brauchen Sie für die meisten Aufgaben. Ihr Import steht daher meistens am Anfang Ihrer Programme oder Notebooks.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd"
   },
   {
     "objectID": "machine-learning/preprocessing.html#daten-importieren",
     "href": "machine-learning/preprocessing.html#daten-importieren",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.3 Daten importieren",
     "text": "5.3 Daten importieren\nDie Daten, die in diesem Beispiel als CSV-Datei vorliegen, wird mithilfe von pandas importiert.\n\ndataset = pd.read_csv(\"data/dataset.csv\")\n\nDas geladene Datenset kann hier im Notebook angezeigt werden.\n\ndataset\n\n\n\n\n\n  \n    \n      \n      Land\n      Alter\n      Gehalt\n      gekauft\n    \n  \n  \n    \n      0\n      Frankreich\n      44.0\n      72000.0\n      Nein\n    \n    \n      1\n      Griechenland\n      27.0\n      48000.0\n      Ja\n    \n    \n      2\n      Deutschland\n      30.0\n      54000.0\n      Nein\n    \n    \n      3\n      Griechenland\n      38.0\n      61000.0\n      Nein\n    \n    \n      4\n      Deutschland\n      40.0\n      NaN\n      Ja\n    \n    \n      5\n      Frankreich\n      35.0\n      58000.0\n      Ja\n    \n    \n      6\n      Griechenland\n      NaN\n      52000.0\n      Nein\n    \n    \n      7\n      Frankreich\n      48.0\n      79000.0\n      Ja\n    \n    \n      8\n      Deutschland\n      50.0\n      83000.0\n      Nein\n    \n    \n      9\n      Frankreich\n      37.0\n      67000.0\n      Ja\n    \n  \n\n\n\n\nFür die folgenden Operationen auf den Daten muss das Datenset in zwei Bereiche eingeteilt werden. Dabei sind sind die folgenden Gedanken leitend:\nDas zu entwickelnde Modell soll voraussagen können, ob ein Klient Kaufabsichten hat oder nicht. Dafür werden die Features Land, Alter und Gehalt zugrundegelegt. Diese Features sind die unabhängigen Variablen. Die abhängige Variable wiederum ist in der letzten Spalte gekauft zu finden. Sie hängt von den Werten der ersten drei Spalten ab.\nEs gilt also, ein Modell mit den Features der ersten drei Spalten zu trainieren, um eine Voraussage (prediction) für die Kaufabsicht treffen zu können.\nDie folgenden Anweisungen sind sehr allgemein formuliert, damit sie für weitere Aufgaben wiederverwendbar sind. Voraussetzung ist, dass die ersten Spalten eines Datensets die unabhängigen Variablen enthalten, während die abhängige Variable in der letzten Spalte steht."
   },
   {
     "objectID": "machine-learning/preprocessing.html#featurematrix-auswählen",
     "href": "machine-learning/preprocessing.html#featurematrix-auswählen",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.4 Featurematrix auswählen",
     "text": "5.4 Featurematrix auswählen\nZunächst werden die Features in einer Variable zusammengefasst, die einer Matrix entspricht.\n\nX = dataset.iloc[:, :-1].values\n\niloc ist eine Methode, die pandas für DataFrames zur Verfügung stellt. In den eckigen Klammern wird angegeben, welche Werte einer Tabelle ausgewählt werden sollen. Stehen dort zwei kommaseparierte Werte, bezeichnet der erste die Zeilen, der zweite die Spalten.\n\n\n\n\n\n\nAufgabe\n\n\n\nErklären Sie, was es mit den Doppelpunkten auf sich hat und warum die Angabe für die Spalten mit -1 notiert ist!"
   },
   {
     "objectID": "machine-learning/preprocessing.html#abhängigen-vektor-bestimmen",
     "href": "machine-learning/preprocessing.html#abhängigen-vektor-bestimmen",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.5 Abhängigen Vektor bestimmen",
     "text": "5.5 Abhängigen Vektor bestimmen\nAnschließend wird die letzte Spalte als Vektor ausgewählt. Diese Werte sollen vorhergesagt werden.\n\ny = dataset.iloc[:, -1].values\n\nDie Anordnung der Features als Matrix kann mit einer einfachen Ausgabe dargestellt werden.\n\nprint(X)\n\n[['Frankreich' 44.0 72000.0]\n ['Griechenland' 27.0 48000.0]\n ['Deutschland' 30.0 54000.0]\n ['Griechenland' 38.0 61000.0]\n ['Deutschland' 40.0 nan]\n ['Frankreich' 35.0 58000.0]\n ['Griechenland' nan 52000.0]\n ['Frankreich' 48.0 79000.0]\n ['Deutschland' 50.0 83000.0]\n ['Frankreich' 37.0 67000.0]]\n\n\nEbenso die Gestalt der abhängigen Variable als Vektor.\n\nprint(y)\n\n['Nein' 'Ja' 'Nein' 'Nein' 'Ja' 'Ja' 'Nein' 'Ja' 'Nein' 'Ja']"
   },
   {
     "objectID": "machine-learning/preprocessing.html#fehlende-daten-berücksichtigen",
     "href": "machine-learning/preprocessing.html#fehlende-daten-berücksichtigen",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.6 Fehlende Daten berücksichtigen",
     "text": "5.6 Fehlende Daten berücksichtigen\nWenn wenige Daten fehlen, können diese Datensätze in der Regel ignoriert bzw. entfernt werden. Fehlen in vielen Datensätzen Daten, gibt es verschiedene Strategien, diese zu ersetzen. Eine davon ist, den Mittelwert aus den vorhandenen Daten zu bilden. Hierfür stellt scikit-learn ein Verfahren zur Verfügung.\n\nfrom sklearn.impute import SimpleImputer\nimputer = SimpleImputer(missing_values=np.nan, strategy='mean')\nimputer.fit(X[:, 1:3])\nX[:, 1:3] = imputer.transform(X[:, 1:3])\n\n\nprint(X)\n\n[['Frankreich' 44.0 72000.0]\n ['Griechenland' 27.0 48000.0]\n ['Deutschland' 30.0 54000.0]\n ['Griechenland' 38.0 61000.0]\n ['Deutschland' 40.0 63777.77777777778]\n ['Frankreich' 35.0 58000.0]\n ['Griechenland' 38.77777777777778 52000.0]\n ['Frankreich' 48.0 79000.0]\n ['Deutschland' 50.0 83000.0]\n ['Frankreich' 37.0 67000.0]]\n\n\n\n\n\n\n\n\nAufgabe\n\n\n\nRecherchieren Sie verwendeten Klassen und Methoden in der Dokumentation von scikit-learn."
   },
   {
     "objectID": "machine-learning/preprocessing.html#kategorien-in-den-daten-kodieren",
     "href": "machine-learning/preprocessing.html#kategorien-in-den-daten-kodieren",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.7 Kategorien in den Daten kodieren",
     "text": "5.7 Kategorien in den Daten kodieren\nDamit der Algorithmus die Daten schnell und eindeutig verarbeiten kann, müssen Textwerte als Zahlenwerte kodiert werden, hier also die Länder. Ein gängiges Verfahren ist hierbei, binäre Vektoren aus den möglichen Kombinationen der Kategorien zu erstellen. Bei diesem Vorgehen werden neue Spalten angelegt, die diese Vektoren abbilden. Lesen Sie hierzu auch den Artikel über One Hot Encoding, wie dieses Verfahren genannt wird.\nDa im vorliegenden Datenset sowohl in den unabhängigen als auch in der abhängigen Variable kategorische Daten vorliegen, ist der Vorgang zweimal notwendig.\n\n5.7.1 Die unabhängige Variable kodieren\nAuch hierfür werden wieder Methoden von scikit-learn verwendet.\n\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import OneHotEncoder\nct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')\nX = np.array(ct.fit_transform(X))\n\n\nprint(ct)\n\nColumnTransformer(remainder='passthrough',\n                  transformers=[('encoder', OneHotEncoder(), [0])])\n\n\n\nprint(X)\n\n[[0.0 1.0 0.0 44.0 72000.0]\n [0.0 0.0 1.0 27.0 48000.0]\n [1.0 0.0 0.0 30.0 54000.0]\n [0.0 0.0 1.0 38.0 61000.0]\n [1.0 0.0 0.0 40.0 63777.77777777778]\n [0.0 1.0 0.0 35.0 58000.0]\n [0.0 0.0 1.0 38.77777777777778 52000.0]\n [0.0 1.0 0.0 48.0 79000.0]\n [1.0 0.0 0.0 50.0 83000.0]\n [0.0 1.0 0.0 37.0 67000.0]]\n\n\n\n\n5.7.2 Die abhängige Variable kodieren\nDa die Werte der abhängigen Variablen binär abgebildet werden können, ist hier One-Hot-Encoding nicht notwendig.\n\nfrom sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\ny = le.fit_transform(y)\n\n\nprint(y)\n\n[1 0 1 1 0 0 1 0 1 0]"
   },
   {
     "objectID": "machine-learning/preprocessing.html#daten-aufteilen-in-training--und-testset",
     "href": "machine-learning/preprocessing.html#daten-aufteilen-in-training--und-testset",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.8 Daten aufteilen in Training- und Testset",
     "text": "5.8 Daten aufteilen in Training- und Testset\nFür den eigentlichen Prozess des “Maschinenlernens” wird das Datenset in ein Trainingsset und ein Testset aufgeteilt.\nMit dem Trainingsset wird das Machine-Learning-Modell trainiert, mit dem Testset wird die Vorhersagegüte des Modells getestet. Hierbei wird so getan, als ob es sich bei den Testdaten um zukünftige reale Daten handelt.\nscikit-learn stellt auch hierfür ein Verfahren bereit.\n\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 1)\n\n\nprint(X_train)\n\n[[0.0 0.0 1.0 38.77777777777778 52000.0]\n [1.0 0.0 0.0 40.0 63777.77777777778]\n [0.0 1.0 0.0 44.0 72000.0]\n [0.0 0.0 1.0 38.0 61000.0]\n [0.0 0.0 1.0 27.0 48000.0]\n [0.0 1.0 0.0 48.0 79000.0]\n [1.0 0.0 0.0 50.0 83000.0]\n [0.0 1.0 0.0 35.0 58000.0]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 30.0 54000.0]\n [0.0 1.0 0.0 37.0 67000.0]]\n\n\n\nprint(y_train)\n\n[1 0 1 1 0 0 1 0]\n\n\n\nprint(y_test)\n\n[1 0]"
   },
   {
     "objectID": "machine-learning/preprocessing.html#feature-scaling",
     "href": "machine-learning/preprocessing.html#feature-scaling",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.9 Feature Scaling",
     "text": "5.9 Feature Scaling\nFeature Scaling ist die Anpassung der unabhängigen Daten in einer Weise, dass sie alle im gleichen Verhältnis zueinander stehen. Dadurch wird vermieden, dass ein Feature andere Features dominiert. Im Folgenden wird das Verfahren der Standardisierung angewendet.\nWichtig: Feature Scaling wird immer erst nach der Aufteilung des Datensets durchgeführt! Damit wird Informationsverlust bei den Testdaten vermieden.\n\nfrom sklearn.preprocessing import StandardScaler\nsc = StandardScaler()\nX_train[:, 3:] = sc.fit_transform(X_train[:, 3:])\nX_test[:, 3:] = sc.transform(X_test[:, 3:])\n\n\nprint(X_train)\n\n[[0.0 0.0 1.0 -0.19159184384578545 -1.0781259408412425]\n [1.0 0.0 0.0 -0.014117293757057777 -0.07013167641635372]\n [0.0 1.0 0.0 0.566708506533324 0.633562432710455]\n [0.0 0.0 1.0 -0.30453019390224867 -0.30786617274297867]\n [0.0 0.0 1.0 -1.9018011447007988 -1.420463615551582]\n [0.0 1.0 0.0 1.1475343068237058 1.232653363453549]\n [1.0 0.0 0.0 1.4379472069688968 1.5749910381638885]\n [0.0 1.0 0.0 -0.7401495441200351 -0.5646194287757332]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 -1.4661817944830124 -0.9069571034860727]\n [0.0 1.0 0.0 -0.44973664397484414 0.2056403393225306]]"
   },
   {
     "objectID": "machine-learning/preprocessing.html#aufgaben",
     "href": "machine-learning/preprocessing.html#aufgaben",
-    "title": "5  Daten vorbereiten (data preprocessing)",
+    "title": "5  Daten vorbereiten",
     "section": "5.10 Aufgaben",
     "text": "5.10 Aufgaben\n\n\n\n\n\n\nNachvollziehen der verwendeten Klassen, Methoden und Eigenschaften von scikit-learn.\n\n\n\nRecherchieren Sie in der Dokumentation von scikit-learn, was Sie in diesem Beispiel verwendet haben.\n\n\n\n\n\n\n\n\nModell für Vorhersage entwickeln\n\n\n\n\nÜberlegen Sie, was für ein Modell Sie für diese Daten entwickeln müssen, um die Kaufabsichten von Klienten vorhersagen zu können.\nEntscheiden Sie sich erst für ein Verfahren, nachdem Sie die lineare, die multiple und die logistische Regression in den folgenden Kapiteln kennengelernt haben.\n\n\n\n\n\n\n\n\n\nMehr über Feature Scaling erfahren\n\n\n\nLesen Sie mehr über Feature Scaling und die verschiedenen Möglichkeiten von sklearn"
   },
@@ -317,7 +317,7 @@
   {
     "objectID": "references.html",
     "href": "references.html",
-    "title": "Quellen",
+    "title": "Literatur",
     "section": "",
     "text": "Kirste, Moritz, and Markus Schürholz. 2019. “Einleitung:\nEntwicklungswege zur KI.” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 21–35. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, ed. 2019. Künstliche Intelligenz. Technologien\n Anwendung  Gesellschaft. Berlin,\nHeidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
   },
@@ -537,5 +537,222 @@
     "title": "8  Logistische Regression",
     "section": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben",
     "text": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
+  },
+  {
+    "objectID": "machine-learning/index.html#eine-kurze-geschichte-der-künstlichen-intelligenz-ki",
+    "href": "machine-learning/index.html#eine-kurze-geschichte-der-künstlichen-intelligenz-ki",
+    "title": "Machine Learning",
+    "section": "Eine kurze Geschichte der Künstlichen Intelligenz (KI)",
+    "text": "Eine kurze Geschichte der Künstlichen Intelligenz (KI)\nZu empfehlen ist der Themenband “Künstliche Intelligenz” von Wittpahl (2019). Darin führen Kirste und Schürholz (2019) ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.\n\n\n\nQuelle: Crissy Jarvis on Unsplash\n\n\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, Hrsg. 2019. Künstliche Intelligenz. Technologien  Anwendung  Gesellschaft. Berlin, Heidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
+  },
+  {
+    "objectID": "appendices/offene-fragen.html",
+    "href": "appendices/offene-fragen.html",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "",
+    "text": "import numpy as np\n\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[1, 1:4])\n\n[7 8 9]\n\n\nHole von beiden Elementen [0:2] jeweils das dritte Element [2].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 2])\n\n[3 8]\n\n\nHole von beiden Elementen [0:2] jeweils die Elemente 2, 3 und 4 [1:4].\n\narr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])\n\nprint(arr[0:2, 1:4])\n\n[[2 3 4]\n [7 8 9]]"
+  },
+  {
+    "objectID": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
+    "href": "appendices/offene-fragen.html#grafiken-in-matplotlib-vergrößern",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "A.2 Grafiken in matplotlib vergrößern",
+    "text": "A.2 Grafiken in matplotlib vergrößern\n\nimport matplotlib.pyplot as plt\n\n# Inches für Breite und Höhe\nplt.rcParams['figure.figsize'] = [12, 8]\n# Auflösung\nplt.rcParams['figure.dpi'] = 220 # 200 e.g. is really fine, but slower\n\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.xlabel('some other numbers')\nplt.show()"
+  },
+  {
+    "objectID": "appendices/offene-fragen.html#interaktive-visualisierungen",
+    "href": "appendices/offene-fragen.html#interaktive-visualisierungen",
+    "title": "Appendix A — Antworten auf Fragen",
+    "section": "A.3 Interaktive Visualisierungen",
+    "text": "A.3 Interaktive Visualisierungen\nWie hier für die Version 3.0 von JupyterLab beschrieben, muss zunächst mit pip das Paket ipympl installiert werden. Danach ist es am besten, nicht nur den Kernel neu zu starten, sondern JupyterLab einmal zu stoppen, neu zu starten und den Browser ebenfalls zu aktualisieren.\n\n#%pip install ipympl\n%matplotlib inline\n%matplotlib widget\n\nimport matplotlib.pyplot as plt\n\n\nplt.plot([1,2,3,4,5,6,7], [10, 50, 100, 23,15,28,45], linewidth = 3, c = 'g')"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html",
+    "href": "machine-learning/kaufabsicht.html",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "",
+    "text": "Der folgende Code vervollständigt das Beispiel aus dem Abschnitt Daten vorbereiten, in dem die Kaufabsicht von Klient*innen vorhergesagt werden soll."
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#bibliotheken-installieren",
+    "href": "machine-learning/kaufabsicht.html#bibliotheken-installieren",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.1 Bibliotheken installieren",
+    "text": "9.1 Bibliotheken installieren\nFühren Sie die folgende Zelle aus, um zu überprüfen, dass alle notwendigen Bibliotheken installiert sind.\n\n#%pip install sklearn\n#%pip install numpy\n#%pip install pandas\n#%pip install matplotlib"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#bibliotheken-importieren",
+    "href": "machine-learning/kaufabsicht.html#bibliotheken-importieren",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.2 Bibliotheken importieren",
+    "text": "9.2 Bibliotheken importieren\nDie folgenden Bibliotheken brauchen Sie für die meisten Aufgaben. Ihr Import steht daher meistens am Anfang Ihrer Programme oder Notebooks.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\nimport pandas as pd"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#daten-importieren",
+    "href": "machine-learning/kaufabsicht.html#daten-importieren",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.3 Daten importieren",
+    "text": "9.3 Daten importieren\nDie Daten, die in diesem Beispiel als CSV-Datei vorliegen, wird mithilfe von pandas importiert.\n\ndf = pd.read_csv(\"data/dataset.csv\")\n\nDas geladene Datenset kann hier im Notebook angezeigt werden.\n\ndf\n\n\n\n\n\n  \n    \n      \n      Land\n      Alter\n      Gehalt\n      gekauft\n    \n  \n  \n    \n      0\n      Frankreich\n      44.0\n      72000.0\n      Nein\n    \n    \n      1\n      Griechenland\n      27.0\n      48000.0\n      Ja\n    \n    \n      2\n      Deutschland\n      30.0\n      54000.0\n      Nein\n    \n    \n      3\n      Griechenland\n      38.0\n      61000.0\n      Nein\n    \n    \n      4\n      Deutschland\n      40.0\n      NaN\n      Ja\n    \n    \n      5\n      Frankreich\n      35.0\n      58000.0\n      Ja\n    \n    \n      6\n      Griechenland\n      NaN\n      52000.0\n      Nein\n    \n    \n      7\n      Frankreich\n      48.0\n      79000.0\n      Ja\n    \n    \n      8\n      Deutschland\n      50.0\n      83000.0\n      Nein\n    \n    \n      9\n      Frankreich\n      37.0\n      67000.0\n      Ja"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#featurematrix-auswählen",
+    "href": "machine-learning/kaufabsicht.html#featurematrix-auswählen",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.4 Featurematrix auswählen",
+    "text": "9.4 Featurematrix auswählen\nZunächst werden die Features in einer Variable zusammengefasst, die einer Matrix entspricht.\n\nX = df.iloc[:, :-1].values\n\n\ny = df.iloc[:, -1].values\n\n\nprint(X)\n\n[['Frankreich' 44.0 72000.0]\n ['Griechenland' 27.0 48000.0]\n ['Deutschland' 30.0 54000.0]\n ['Griechenland' 38.0 61000.0]\n ['Deutschland' 40.0 nan]\n ['Frankreich' 35.0 58000.0]\n ['Griechenland' nan 52000.0]\n ['Frankreich' 48.0 79000.0]\n ['Deutschland' 50.0 83000.0]\n ['Frankreich' 37.0 67000.0]]\n\n\n\nprint(y)\n\n['Nein' 'Ja' 'Nein' 'Nein' 'Ja' 'Ja' 'Nein' 'Ja' 'Nein' 'Ja']"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#fehlende-daten-berücksichtigen",
+    "href": "machine-learning/kaufabsicht.html#fehlende-daten-berücksichtigen",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.5 Fehlende Daten berücksichtigen",
+    "text": "9.5 Fehlende Daten berücksichtigen\nWenn wenige Daten fehlen, können diese Datensätze in der Regel ignoriert bzw. entfernt werden. Fehlen in vielen Datensätzen Daten, gibt es verschiedene Strategien, diese zu ersetzen. Eine davon ist, den Mittelwert aus den vorhandenen Daten zu bilden. Hierfür stellt scikit-learn ein Verfahren zur Verfügung.\n\nfrom sklearn.impute import SimpleImputer\nimputer = SimpleImputer(missing_values=np.nan, strategy='mean')\nimputer.fit(X[:, 1:3])\nX[:, 1:3] = imputer.transform(X[:, 1:3])\n\n\nprint(X)\n\n[['Frankreich' 44.0 72000.0]\n ['Griechenland' 27.0 48000.0]\n ['Deutschland' 30.0 54000.0]\n ['Griechenland' 38.0 61000.0]\n ['Deutschland' 40.0 63777.77777777778]\n ['Frankreich' 35.0 58000.0]\n ['Griechenland' 38.77777777777778 52000.0]\n ['Frankreich' 48.0 79000.0]\n ['Deutschland' 50.0 83000.0]\n ['Frankreich' 37.0 67000.0]]\n\n\n\n\n\n\n\n\nAufgabe\n\n\n\nRecherchieren Sie verwendeten Klassen und Methoden in der Dokumentation von scikit-learn."
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#kategorien-in-den-daten-kodieren",
+    "href": "machine-learning/kaufabsicht.html#kategorien-in-den-daten-kodieren",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.6 Kategorien in den Daten kodieren",
+    "text": "9.6 Kategorien in den Daten kodieren\nDamit der Algorithmus die Daten schnell und eindeutig verarbeiten kann, müssen Textwerte als Zahlenwerte kodiert werden, hier also die Länder. Ein gängiges Verfahren ist hierbei, binäre Vektoren aus den möglichen Kombinationen der Kategorien zu erstellen. Bei diesem Vorgehen werden neue Spalten angelegt, die diese Vektoren abbilden. Lesen Sie hierzu auch den Artikel über One Hot Encoding, wie dieses Verfahren genannt wird.\nDa im vorliegenden Datenset sowohl in den unabhängigen als auch in der abhängigen Variable kategorische Daten vorliegen, ist der Vorgang zweimal notwendig.\n\n9.6.1 Die unabhängige Variable kodieren\nAuch hierfür werden wieder Methoden von scikit-learn verwendet.\n\nfrom sklearn.compose import ColumnTransformer\nfrom sklearn.preprocessing import OneHotEncoder\nct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')\nX = np.array(ct.fit_transform(X))\n\n\nprint(ct)\n\nColumnTransformer(remainder='passthrough',\n                  transformers=[('encoder', OneHotEncoder(), [0])])\n\n\n\nprint(X)\n\n[[0.0 1.0 0.0 44.0 72000.0]\n [0.0 0.0 1.0 27.0 48000.0]\n [1.0 0.0 0.0 30.0 54000.0]\n [0.0 0.0 1.0 38.0 61000.0]\n [1.0 0.0 0.0 40.0 63777.77777777778]\n [0.0 1.0 0.0 35.0 58000.0]\n [0.0 0.0 1.0 38.77777777777778 52000.0]\n [0.0 1.0 0.0 48.0 79000.0]\n [1.0 0.0 0.0 50.0 83000.0]\n [0.0 1.0 0.0 37.0 67000.0]]\n\n\n\n\n9.6.2 Die abhängige Variable kodieren\nDa die Werte der abhängigen Variablen binär abgebildet werden können, ist hier One-Hot-Encoding nicht notwendig.\n\nfrom sklearn.preprocessing import LabelEncoder\nle = LabelEncoder()\ny = le.fit_transform(y)\n\n\nprint(y)\n\n[1 0 1 1 0 0 1 0 1 0]"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#daten-aufteilen-in-training--und-testset",
+    "href": "machine-learning/kaufabsicht.html#daten-aufteilen-in-training--und-testset",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.7 Daten aufteilen in Training- und Testset",
+    "text": "9.7 Daten aufteilen in Training- und Testset\nFür den eigentlichen Prozess des “Maschinenlernens” wird das Datenset in ein Trainingsset und ein Testset aufgeteilt.\nMit dem Trainingsset wird das Machine-Learning-Modell trainiert, mit dem Testset wird die Vorhersagegüte des Modells getestet. Hierbei wird so getan, als ob es sich bei den Testdaten um zukünftige reale Daten handelt.\nscikit-learn stellt auch hierfür ein Verfahren bereit.\n\nfrom sklearn.model_selection import train_test_split\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, random_state = 0)\n\n\nprint(X_train)\n\n[[0.0 1.0 0.0 37.0 67000.0]\n [0.0 0.0 1.0 27.0 48000.0]\n [0.0 0.0 1.0 38.77777777777778 52000.0]\n [0.0 1.0 0.0 48.0 79000.0]\n [0.0 0.0 1.0 38.0 61000.0]\n [0.0 1.0 0.0 44.0 72000.0]\n [0.0 1.0 0.0 35.0 58000.0]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 30.0 54000.0]\n [1.0 0.0 0.0 50.0 83000.0]\n [1.0 0.0 0.0 40.0 63777.77777777778]]\n\n\n\nprint(y_train)\n\n[0 0 1 0 1 1 0]\n\n\n\nprint(y_test)\n\n[1 1 0]"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#feature-scaling",
+    "href": "machine-learning/kaufabsicht.html#feature-scaling",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.8 Feature Scaling",
+    "text": "9.8 Feature Scaling\nFeature Scaling ist die Anpassung der unabhängigen Daten in einer Weise, dass sie alle im gleichen Verhältnis zueinander stehen. Dadurch wird vermieden, dass ein Feature andere Features dominiert.\nWichtig: Feature Scaling wird immer erst nach der Aufteilung des Datensets durchgeführt! Damit wird Informationsverlust bei den Testdaten vermieden.\n\nX_test[:, 3:]\n\narray([[30.0, 54000.0],\n       [50.0, 83000.0],\n       [40.0, 63777.77777777778]], dtype=object)\n\n\n\nfrom sklearn.preprocessing import StandardScaler\nsc = StandardScaler()\nX_train[:, 3:] = sc.fit_transform(X_train[:, 3:])\nX_test[:, 3:] = sc.transform(X_test[:, 3:])\n\n\nprint(X_train)\n\n[[0.0 1.0 0.0 -0.2029809015697542 0.44897082661305115]\n [0.0 0.0 1.0 -1.821689357126023 -1.4170641714974423]\n [0.0 0.0 1.0 0.08478949052913817 -1.0242146982110225]\n [0.0 1.0 0.0 1.5775983995421416 1.62751924647231]\n [0.0 0.0 1.0 -0.041110056014127316 -0.14030338331657835]\n [0.0 1.0 0.0 0.930115017319634 0.9400326682210757]\n [0.0 1.0 0.0 -0.526722592681008 -0.4349404882813931]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 -1.3360768204591424 -0.8277899615678128]\n [1.0 0.0 0.0 1.9013400906533953 2.02036871975873]\n [1.0 0.0 0.0 0.28263163509712647 0.13250875091010228]]"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#trainieren-des-modells",
+    "href": "machine-learning/kaufabsicht.html#trainieren-des-modells",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.9 Trainieren des Modells",
+    "text": "9.9 Trainieren des Modells\n\nfrom sklearn.linear_model import LogisticRegression\nclassifier = LogisticRegression(random_state = 0)\nclassifier.fit(X_train, y_train)\n\nLogisticRegression(random_state=0)In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.LogisticRegressionLogisticRegression(random_state=0)"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#eine-vorhersage-mit-neuen-daten-machen",
+    "href": "machine-learning/kaufabsicht.html#eine-vorhersage-mit-neuen-daten-machen",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.10 Eine Vorhersage mit neuen Daten machen",
+    "text": "9.10 Eine Vorhersage mit neuen Daten machen\nEinen neuen Datensatz erstellen:\n\nnew_data = [0.0, 0.0, 1.0, 39, 160000]\n\nDen Datensatz zum richtigen Typ wandeln und in die richtige Form bringen:\n\nnew_data = np.array(new_data).reshape(1, -1)\nnew_data\n\narray([[0.0e+00, 0.0e+00, 1.0e+00, 3.9e+01, 1.6e+05]])\n\n\nDas Segment ausgeben, das skaliert werden soll:\n\nnew_data[:, 3:]\n\narray([[3.9e+01, 1.6e+05]])\n\n\nDie Transformation auf das Segment anwenden und zurückschreiben:\n\nnew_data[:, 3:] = sc.transform(new_data[:, 3:])\nnew_data\n\narray([[0.  , 0.  , 1.  , 0.12, 9.58]])\n\n\nDie Vorhersage machen:\n\nclassifier.predict(new_data)\n\narray([0])"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#die-testdaten-vorhersagen",
+    "href": "machine-learning/kaufabsicht.html#die-testdaten-vorhersagen",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.11 Die Testdaten vorhersagen",
+    "text": "9.11 Die Testdaten vorhersagen\nWeil es jetzt mehrere Features gibt, ist das Zeichnen eine mehrdimensionalen Graphen nicht möglich. Daher werden im Folgenden die Profite aus den Trainingsdaten mit denen aus dem Testset verglichen. Hierbei kann die Güte des Modells erneut an der Abweichung der vorhergesagten zu den Testwerten gemessen werden.\n\nX_test\n\narray([[1.0, 0.0, 0.0, -1.3360768204591424, -0.8277899615678128],\n       [1.0, 0.0, 0.0, 1.9013400906533953, 2.02036871975873],\n       [1.0, 0.0, 0.0, 0.28263163509712647, 0.13250875091010228]],\n      dtype=object)\n\n\n\ny_pred = classifier.predict(X_test)\ny_pred\n\narray([0, 1, 0])\n\n\nUm die vorhergesagten und bekannten Daten nebeneinanderstellen zu können, wird das numpy-Array umgeformt:\n\nnp.set_printoptions(precision=2)\nprint(np.concatenate((y_pred.reshape(len(y_pred),1), y_test.reshape(len(y_test),1)), 1))\n\n[[0 1]\n [1 1]\n [0 0]]"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#confusion-matrix-ausgeben",
+    "href": "machine-learning/kaufabsicht.html#confusion-matrix-ausgeben",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.12 Confusion Matrix ausgeben",
+    "text": "9.12 Confusion Matrix ausgeben\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[1 0]\n [2 0]]\n\n\n0.3333333333333333"
+  },
+  {
+    "objectID": "machine-learning/kaufabsicht.html#wahrheitsmatrix-confusion-matrix-ausgeben",
+    "href": "machine-learning/kaufabsicht.html#wahrheitsmatrix-confusion-matrix-ausgeben",
+    "title": "9  Kaufabsicht vorhersagen",
+    "section": "9.12 Wahrheitsmatrix (confusion matrix) ausgeben",
+    "text": "9.12 Wahrheitsmatrix (confusion matrix) ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(\"Die Wahrheitsmatrix sieht aus wie folgt:\")\nprint(cm)\n# Die Rate der korrekten Vorhersagen\nprint(\"Der Accuracy Score beträgt {} %.\".format(accuracy_score(y_test, y_pred)*100))\n\nDie Wahrheitsmatrix sieht aus wie folgt:\n[[1 0]\n [1 1]]\nDer Accuracy Score beträgt 66.66666666666666 %."
+  },
+  {
+    "objectID": "appendices/hedgedoc.html",
+    "href": "appendices/hedgedoc.html",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "",
+    "text": "Im Folgenden sind die Links aus dem kollaborativen Pad zur Veranstaltung aufgelistet."
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#der-zweite-workshoptag-findet-online-statt",
+    "href": "appendices/hedgedoc.html#der-zweite-workshoptag-findet-online-statt",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.1 Der zweite Workshoptag findet online statt",
+    "text": "B.1 Der zweite Workshoptag findet online statt\n\nTeamsraum am Freitag, 14.10.2022"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#erwartungen-an-den-workshop",
+    "href": "appendices/hedgedoc.html#erwartungen-an-den-workshop",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.2 Erwartungen an den Workshop",
+    "text": "B.2 Erwartungen an den Workshop\n\nAm Ende der Veranstaltung möchte ich …\n… das Thema für meinen Unterricht aufbereiten können\nIdeen für KI im Unterricht und deren Umsetzung\nGute Ansätze für die Vermittlung des Machine Lerning Themas für den Unterricht haben.\nTools für KI im Unterricht\nEinen Einstieg für meinen Unterricht mit Python gefunden haben.\nEinführung in Python, neue Facetten im Bereich Maschinelles Lernen\nUnterrichtsideen\nEinstieg in Python\nneue Ideen für Unterrichtsinhalte\nEinsatzmöglichkeiten für JupterLab kennen lernen (Abgrenzung JupyterHub)\nEinen guten Überblick über Jupyter-Notebook, pandas, numpy, … bekommen und deren Anwendung."
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#linktracker",
+    "href": "appendices/hedgedoc.html#linktracker",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.3 Linktracker",
+    "text": "B.3 Linktracker\nIn der folgenden Liste können wir Quellen notieren, die wir mit anderen tauschen wollen.\n\nB.3.1 Donnerstag, 13.10.2022\n\nMatheformeln mit LaTeX\nStatistik-Exkurs mit Mai\n\n\nB.3.1.1 (Web)tools\n\nEmpfehlung für Bildschirm-Zoom und Kommentierung: Sysinternals-> ZoomIt (Microsoft aber frei verfügbar) -> ZoomIt\nhttps://openai.com/ Hier sind die beiden großen KIs “GPT-3” und “DALL-E 2” zum Ausprobieren. Man hat ein gewisses kostenloses Kontingent zur Verfügung, danach muss gezahlt werden.\nml5.js, Ausprobieren am Ende der Seite. Aufbauend auf p5.js ist ml5.js eine Bibliothekssammlung für ML-Anwendungen im Browser.\nRStudio Professionelle Umgebung zur Datenanalyse\nKI-Übersetzer deepL\n\n\n\nB.3.1.2 Python\n\nPython Flask Baukastensystem für Webserver-Anwendungen; Alternative ist Bottle, das nur mit einer Datei auskommt und Ähnliches kann wie Flask.\nSpotipy Python-Package für den Zugriff auf die Spotify-API\n\n\n\nB.3.1.3 JupyterLab\n\nJupyterLab Benutzeroberfläche erklärt\nJupyterLab mit Docker nutzen\n\n\n\nB.3.1.4 JupyterHub\n\nBlogbeitrag meines Kollegen Marvin Kastner zu Erfahrungen mit JupyterHub in Prüfungen\nInstallationshinweise für einen eigenen JupyterHub (sehr TUHH-bezogen)\n\n\n\nB.3.1.5 Matplotlib\n\nEinführungstutorial\n\nimport matplotlib.pyplot as plt\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.show()\n\n\nB.3.1.6 Pandas\n\nEinführungstutorial\n\n\n\n\nB.3.2 Freitag, 14.10.2022\n\nKaggle Daten und Code für Data Science. Auch Challenges von Data Scientists werden hier ausgetragen. Ein Beispiel, an dem ich beteiligt war: Hack dich schlau! Die lange Nacht der Strompreisprognosen\n\n\n\nDatenmaterial zum Download\n\n\n\n“Künstliche Intelligenz (Open Access)”\nhttps://www.heise.de/hintergrund/Wie-sich-Kuenstler-gegen-die-Nutzung-ihrer-Bilder-als-KI-Vorlagen-wehren-7306494.html\nhttps://openfuture.eu/publication/ai_commons-white-paper/\nhttps://plotly.com/\nhttps://anvil.works/\nhttps://talkpython.fm/\n\nimport matplotlib.pyplot as plt\n\n# Inches für Breite und Höhe\nplt.rcParams['figure.figsize'] = [12, 8]\n# Auflösung\nplt.rcParams['figure.dpi'] = 120 # 200 e.g. is really fine, but slower\n\nplt.plot([0, 2, 3, 4])\nplt.ylabel('some numbers')\nplt.xlabel('some other numbers')\nplt.show()\n\nhttps://forms.technologyreview.com/in-machines-we-trust/\nhttps://www.kaggle.com/c/hackathontuhh\nhttps://scikit-learn.org/stable/\nhttps://scikit-learn.org/stable/modules/generated/sklearn.impute.SimpleImputer.html#sklearn.impute.SimpleImputer\nExplainable AI\n\nBespiel: Gehalt aus Berufserfahrung vorhersagen\nTrainingsset\nplt.scatter(X_train, y_train, color = 'red')\nplt.plot(X_train, regressor.predict(X_train), color = 'blue')\nplt.title('Gehalt vs. Erfahrung (Trainingset)')\nplt.xlabel('Berufserfahrung in Jahren')\nplt.ylabel('Gehalt')\nplt.show()\nTestset\nplt.scatter(X_test, y_test, color = 'red')\n# Hier muss nichts ersetzt werden!\nplt.plot(X_train, regressor.predict(X_train), color = 'blue')\nplt.title('Gehalt vs. Erfahrung (Testset)')\nplt.xlabel('Berufserfahrung in Jahren')\nplt.ylabel('Gehalt')\nplt.show()"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#kontakt",
+    "href": "appendices/hedgedoc.html#kontakt",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.9 Kontakt",
+    "text": "B.9 Kontakt\n\nAxel Dürkop\nme@axel-duerkop.de\nhttps://axel-duerkop.de/"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#allgemeines",
+    "href": "appendices/hedgedoc.html#allgemeines",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.1 Allgemeines",
+    "text": "B.1 Allgemeines\n\nMatheformeln mit LaTeX\nStatistik-Exkurs mit Mai\nNeue KIs werfen rechtliche Fragen auf\nWhitepaper: Wie müssen offene Lizenzen an das KI-Zeitalter angepasst werden?"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#webtools",
+    "href": "appendices/hedgedoc.html#webtools",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.2 (Web)tools",
+    "text": "B.2 (Web)tools\n\nEmpfehlung für Bildschirm-Zoom und Kommentierung: Sysinternals-> ZoomIt (Microsoft aber frei verfügbar) -> ZoomIt\nhttps://openai.com/ Hier sind die beiden großen KIs “GPT-3” und “DALL-E 2” zum Ausprobieren. Man hat ein gewisses kostenloses Kontingent zur Verfügung, danach muss gezahlt werden.\nml5.js, Ausprobieren am Ende der Seite. Aufbauend auf p5.js ist ml5.js eine Bibliothekssammlung für ML-Anwendungen im Browser.\nRStudio Professionelle Umgebung zur Datenanalyse\nKI-Übersetzer deepL\nKaggle Daten und Code für Data Science. Auch Challenges von Data Scientists werden hier ausgetragen. Ein Beispiel, an dem ich beteiligt war: Hack dich schlau! Die lange Nacht der Strompreisprognosen\nPlotly zur interaktiven Visualisierung\nAnvil: HTML und CSS mit Python schreiben"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#python",
+    "href": "appendices/hedgedoc.html#python",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.4 Python",
+    "text": "B.4 Python\n\nPython Flask Baukastensystem für Webserver-Anwendungen; Alternative ist Bottle, das nur mit einer Datei auskommt und Ähnliches kann wie Flask.\nSpotipy Python-Package für den Zugriff auf die Spotify-API"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#jupyterlab",
+    "href": "appendices/hedgedoc.html#jupyterlab",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.5 JupyterLab",
+    "text": "B.5 JupyterLab\n\nJupyterLab Benutzeroberfläche erklärt\nJupyterLab mit Docker nutzen"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#jupyterhub",
+    "href": "appendices/hedgedoc.html#jupyterhub",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.6 JupyterHub",
+    "text": "B.6 JupyterHub\n\nBlogbeitrag meines Kollegen Marvin Kastner zu Erfahrungen mit JupyterHub in Prüfungen\nInstallationshinweise für einen eigenen JupyterHub (sehr TUHH-bezogen)"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#matplotlib",
+    "href": "appendices/hedgedoc.html#matplotlib",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.7 Matplotlib",
+    "text": "B.7 Matplotlib\n\nEinführungstutorial"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#pandas",
+    "href": "appendices/hedgedoc.html#pandas",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.8 Pandas",
+    "text": "B.8 Pandas\n\nEinführungstutorial"
+  },
+  {
+    "objectID": "appendices/hedgedoc.html#podcasts",
+    "href": "appendices/hedgedoc.html#podcasts",
+    "title": "Appendix B — Kollaboratives Pad",
+    "section": "B.3 Podcasts",
+    "text": "B.3 Podcasts\n\nIn Machines We Trust\nDer Python-Podcast"
   }
 ]

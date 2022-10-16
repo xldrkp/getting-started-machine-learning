@@ -121,5 +121,14 @@
   },
   "preparation/numpy.qmd": {
     "numpy.html": "abe29d05"
+  },
+  "appendices/offene-fragen.ipynb": {
+    "offene-fragen.html": "3660a32a"
+  },
+  "machine-learning/kaufabsicht.ipynb": {
+    "kaufabsicht.html": "bb89834d"
+  },
+  "appendices/hedgedoc.md": {
+    "hedgedoc.html": "8c8cb794"
   }
 }

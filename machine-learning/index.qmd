@@ -4,5 +4,7 @@ Im Zentrum Ihrer Arbeit steht die Python-Bibliothek [scikit-learn](https://sciki
 
 Für Deep Learning und künstliche neuronale Netze gibt es weitere spezialisierte und ausgereifte Bibliotheken, die in diesem Kurs nicht behandelt werden.
 
+Zu empfehlen ist der Themenband "Künstliche Intelligenz" von @wittpahl_kunstliche_2019. Darin führen @kirsteEinleitungEntwicklungswegeZur2019 ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.
+
 ![Quelle: <a href="https://unsplash.com/@crissyjarvis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Crissy Jarvis</a> on <a href="https://unsplash.com/s/photos/abacus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   ](/assets/img/crissy-jarvis-gdL-UZfnD3I-unsplash.jpg)

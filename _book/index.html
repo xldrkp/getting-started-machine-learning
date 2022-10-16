@@ -21,25 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
 </style>
 
 
@@ -167,7 +148,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./machine-learning/preprocessing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Daten vorbereiten (<em>data preprocessing</em>)</span></a>
+  <a href="./machine-learning/preprocessing.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Daten vorbereiten</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -185,13 +166,38 @@ div.csl-indent {
   <a href="./machine-learning/logistic-regression.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Logistische Regression</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./machine-learning/kaufabsicht.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Kaufabsicht vorhersagen</span></a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">Quellen</a>
+  <a href="./references.html" class="sidebar-item-text sidebar-link">Literatur</a>
   </div>
 </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">Anhang</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices/offene-fragen.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Antworten auf Fragen</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./appendices/hedgedoc.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Kollaboratives Pad</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -201,10 +207,7 @@ div.csl-indent {
     <h2 id="toc-title">Inhaltsverzeichnis</h2>
    
   <ul>
-  <li><a href="#willkommen" id="toc-willkommen" class="nav-link active" data-scroll-target="#willkommen">Willkommen!</a>
-  <ul class="collapse">
-  <li><a href="#eine-kurze-geschichte-der-künstlichen-intelligenz-ki" id="toc-eine-kurze-geschichte-der-künstlichen-intelligenz-ki" class="nav-link" data-scroll-target="#eine-kurze-geschichte-der-künstlichen-intelligenz-ki">Eine kurze Geschichte der Künstlichen Intelligenz (KI)</a></li>
-  </ul></li>
+  <li><a href="#willkommen" id="toc-willkommen" class="nav-link active" data-scroll-target="#willkommen">Willkommen!</a></li>
   </ul>
 </nav>
     </div>
@@ -249,20 +252,8 @@ div.csl-indent {
 <p></p><figcaption class="figure-caption">Quelle: “A man and a woman teaching a giant computer old-fashioned” by <a href="https://openai.com/dall-e-2/">DALL-E 2</a></figcaption><p></p>
 </figure>
 </div>
-<section id="eine-kurze-geschichte-der-künstlichen-intelligenz-ki" class="level2">
-<h2 class="anchored" data-anchor-id="eine-kurze-geschichte-der-künstlichen-intelligenz-ki">Eine kurze Geschichte der Künstlichen Intelligenz (KI)</h2>
-<p>Zu empfehlen ist der Themenband “Künstliche Intelligenz” von <span class="citation" data-cites="wittpahl_kunstliche_2019">Wittpahl (<a href="references.html#ref-wittpahl_kunstliche_2019" role="doc-biblioref">2019</a>)</span>. Darin führen <span class="citation" data-cites="kirsteEinleitungEntwicklungswegeZur2019">Kirste und Schürholz (<a href="references.html#ref-kirsteEinleitungEntwicklungswegeZur2019" role="doc-biblioref">2019</a>)</span> ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
-<div id="ref-kirsteEinleitungEntwicklungswegeZur2019" class="csl-entry" role="doc-biblioentry">
-Kirste, Moritz, und Markus Schürholz. 2019. <span>„Einleitung: Entwicklungswege zur KI“</span>. In <em>Künstliche Intelligenz</em>, herausgegeben von Volker Wittpahl, 21–35. <span>Berlin, Heidelberg</span>: <span>Springer Berlin Heidelberg</span>. <a href="https://doi.org/10.1007/978-3-662-58042-4_1">https://doi.org/10.1007/978-3-662-58042-4_1</a>.
-</div>
-<div id="ref-wittpahl_kunstliche_2019" class="csl-entry" role="doc-biblioentry">
-Wittpahl, Volker, Hrsg. 2019. <em>Künstliche Intelligenz. Technologien <span></span> Anwendung <span></span> Gesellschaft</em>. Berlin, Heidelberg: Springer Vieweg. <a href="https://link.springer.com/book/10.1007/978-3-662-58042-4">https://link.springer.com/book/10.1007/978-3-662-58042-4</a>.
-</div>
-</div>
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -390,6 +381,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+      <div class="nav-footer-center">Copyright 2022, Axel Dürkop. Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.</div>
+  </div>
+</footer>
 
 
 

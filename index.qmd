@@ -6,6 +6,3 @@ Herzlich willkommen in diesem Crashkurs zu Machine Learning.
 
 ![Quelle: "A man and a woman teaching  a giant computer old-fashioned" by [DALL-E 2](https://openai.com/dall-e-2/)](/assets/img/DALL%C2%B7E%202022-10-12%2010.39.39%20-%20A%20man%20and%20a%20woman%20teaching%20%20a%20giant%20computer%20old-fashioned.png)
 
-## Eine kurze Geschichte der Künstlichen Intelligenz (KI)
-
-Zu empfehlen ist der Themenband "Künstliche Intelligenz" von @wittpahl_kunstliche_2019. Darin führen @kirsteEinleitungEntwicklungswegeZur2019 ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.
