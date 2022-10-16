@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Machine Learning mit Python",
     "section": "",
-    "text": "Herzlich willkommen in diesem Crashkurs zu Machine Learning.\n\n\n\nQuelle: “A man and a woman teaching a giant computer old-fashioned” by DALL-E 2"
+    "text": "Herzlich willkommen in diesem Crashkurs zu Machine Learning.\n\n\n\nQuelle: “A man and a woman teaching a giant computer old-fashioned” by DALL-E 2\n\n\n\n\nZu empfehlen ist der Themenband “Künstliche Intelligenz” von Wittpahl (2019). Darin führen Kirste und Schürholz (2019) ein in die Entwicklung verschiedener Richtungen von KI und gehen auch auf das Machine Learning ein.\n\n\n\n\nKirste, Moritz, und Markus Schürholz. 2019. „Einleitung: Entwicklungswege zur KI“. In Künstliche Intelligenz, herausgegeben von Volker Wittpahl, 21–35. Berlin, Heidelberg: Springer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, Hrsg. 2019. Künstliche Intelligenz. Technologien  Anwendung  Gesellschaft. Berlin, Heidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
   },
   {
     "objectID": "introduction/index.html",
@@ -137,7 +137,7 @@
     "href": "machine-learning/preprocessing.html",
     "title": "5  Daten vorbereiten (data preprocessing)",
     "section": "",
-    "text": "Führen Sie die folgende Zelle aus, um zu überprüfen, dass alle notwendigen Bibliotheken installiert sind.\n\n%pip install sklearn\n%pip install numpy\n%pip install pandas\n%pip install matplotlib"
+    "text": "Führen Sie die folgende Zelle aus, um zu überprüfen, dass alle notwendigen Bibliotheken installiert sind.\n\n#%pip install sklearn\n#%pip install numpy\n#%pip install pandas\n#%pip install matplotlib"
   },
   {
     "objectID": "machine-learning/preprocessing.html#bibliotheken-importieren",
@@ -193,21 +193,21 @@
     "href": "machine-learning/preprocessing.html#feature-scaling",
     "title": "5  Daten vorbereiten (data preprocessing)",
     "section": "5.9 Feature Scaling",
-    "text": "5.9 Feature Scaling\nFeature Scaling ist die Anpassung der unabhängigen Daten in einer Weise, dass sie alle im gleichen Verhältnis zueinander stehen. Dadurch wird vermieden, dass ein Feature andere Features dominiert.\nWichtig: Feature Scaling wird immer erst nach der Aufteilung des Datensets durchgeführt! Damit wird Informationsverlust bei den Testdaten vermieden.\n\n5.9.1 Normalisierung\nHier werden alle Werte in den Bereich zwischen 0 und 1 eingeordnet. Normalisierung wird angewendet, wenn es eine normale Verteilung in den meisten Features gibt.\n\n\n5.9.2 Standardisierung\nHierbei werden alle Werte in den Bereich von -3 und +3 eingeordnet. Standardisierung funktioniert immer, egal wie verschieden die Verteilung der Werte in den Features ist.\nTODO: Hier noch den Rechenweg\n\nfrom sklearn.preprocessing import StandardScaler\nsc = StandardScaler()\nX_train[:, 3:] = sc.fit_transform(X_train[:, 3:])\nX_test[:, 3:] = sc.transform(X_test[:, 3:])\n\n\nprint(X_train)\n\n[[0.0 0.0 1.0 -0.19159184384578545 -1.0781259408412425]\n [1.0 0.0 0.0 -0.014117293757057777 -0.07013167641635372]\n [0.0 1.0 0.0 0.566708506533324 0.633562432710455]\n [0.0 0.0 1.0 -0.30453019390224867 -0.30786617274297867]\n [0.0 0.0 1.0 -1.9018011447007988 -1.420463615551582]\n [0.0 1.0 0.0 1.1475343068237058 1.232653363453549]\n [1.0 0.0 0.0 1.4379472069688968 1.5749910381638885]\n [0.0 1.0 0.0 -0.7401495441200351 -0.5646194287757332]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 -1.4661817944830124 -0.9069571034860727]\n [0.0 1.0 0.0 -0.44973664397484414 0.2056403393225306]]"
+    "text": "5.9 Feature Scaling\nFeature Scaling ist die Anpassung der unabhängigen Daten in einer Weise, dass sie alle im gleichen Verhältnis zueinander stehen. Dadurch wird vermieden, dass ein Feature andere Features dominiert. Im Folgenden wird das Verfahren der Standardisierung angewendet.\nWichtig: Feature Scaling wird immer erst nach der Aufteilung des Datensets durchgeführt! Damit wird Informationsverlust bei den Testdaten vermieden.\n\nfrom sklearn.preprocessing import StandardScaler\nsc = StandardScaler()\nX_train[:, 3:] = sc.fit_transform(X_train[:, 3:])\nX_test[:, 3:] = sc.transform(X_test[:, 3:])\n\n\nprint(X_train)\n\n[[0.0 0.0 1.0 -0.19159184384578545 -1.0781259408412425]\n [1.0 0.0 0.0 -0.014117293757057777 -0.07013167641635372]\n [0.0 1.0 0.0 0.566708506533324 0.633562432710455]\n [0.0 0.0 1.0 -0.30453019390224867 -0.30786617274297867]\n [0.0 0.0 1.0 -1.9018011447007988 -1.420463615551582]\n [0.0 1.0 0.0 1.1475343068237058 1.232653363453549]\n [1.0 0.0 0.0 1.4379472069688968 1.5749910381638885]\n [0.0 1.0 0.0 -0.7401495441200351 -0.5646194287757332]]\n\n\n\nprint(X_test)\n\n[[1.0 0.0 0.0 -1.4661817944830124 -0.9069571034860727]\n [0.0 1.0 0.0 -0.44973664397484414 0.2056403393225306]]"
   },
   {
     "objectID": "machine-learning/preprocessing.html#aufgaben",
     "href": "machine-learning/preprocessing.html#aufgaben",
     "title": "5  Daten vorbereiten (data preprocessing)",
     "section": "5.10 Aufgaben",
-    "text": "5.10 Aufgaben\n\n\n\n\n\n\nNachvollziehen der verwendeten Klassen, Methoden und Eigenschaften von scikit-learn.\n\n\n\nRecherchieren Sie in der Dokumentation von scikit-learn, was Sie in diesem Beispiel verwendet haben.\n\n\n\n\n\n\n\n\nModell für Vorhersage entwickeln\n\n\n\n\nÜberlegen Sie, was für ein Modell Sie für diese Daten entwickeln müssen, um die Kaufabsichten von Klienten vorhersagen zu können.\nEntwickeln Sie das Modell.\n\n\n\n\n\n\n\n\n\nMehr über Feature Scaling erfahren\n\n\n\nLesen Sie mehr über Feature Scaling und die verschiedenen Möglichkeiten von sklearn"
+    "text": "5.10 Aufgaben\n\n\n\n\n\n\nNachvollziehen der verwendeten Klassen, Methoden und Eigenschaften von scikit-learn.\n\n\n\nRecherchieren Sie in der Dokumentation von scikit-learn, was Sie in diesem Beispiel verwendet haben.\n\n\n\n\n\n\n\n\nModell für Vorhersage entwickeln\n\n\n\n\nÜberlegen Sie, was für ein Modell Sie für diese Daten entwickeln müssen, um die Kaufabsichten von Klienten vorhersagen zu können.\nEntscheiden Sie sich erst für ein Verfahren, nachdem Sie die lineare, die multiple und die logistische Regression in den folgenden Kapiteln kennengelernt haben.\n\n\n\n\n\n\n\n\n\nMehr über Feature Scaling erfahren\n\n\n\nLesen Sie mehr über Feature Scaling und die verschiedenen Möglichkeiten von sklearn"
   },
   {
     "objectID": "machine-learning/linear-regression.html",
     "href": "machine-learning/linear-regression.html",
     "title": "6  Einfache lineare Regression",
     "section": "",
-    "text": "Bei der einfachen Linearen Regression geht es darum, einen Wert in Abhängigkeit von einem anderen Wert vorherzusagen. Bspw. kann die Frage gestellt werden, die Erfahrung und Gehalt zusammenhängen. Eine verständliche Einführung mit Beispielen finden Sie im Netz."
+    "text": "Bei der einfachen Linearen Regression geht es darum, einen Wert in Abhängigkeit von einem anderen Wert vorherzusagen. Bspw. kann die Frage gestellt werden, die Erfahrung und Gehalt zusammenhängen. Eine verständliche Einführung mit Beispielen finden Sie als Video im Netz."
   },
   {
     "objectID": "machine-learning/linear-regression.html#beispiel-gehalt-bestimmen-in-abhängigkeit-von-der-berufserfahrung",
@@ -319,7 +319,7 @@
     "href": "references.html",
     "title": "Quellen",
     "section": "",
-    "text": "Kirste, Moritz, and Markus Schürholz. 2019. “Einleitung:\nEntwicklungswege zur KI.” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 21–35. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nStubbe, Julian, Jan Wessels, and Guido Zinke. 2019. “Neue\nIntelligenz, neue Ethik?” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 239–54. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_15."
+    "text": "Kirste, Moritz, and Markus Schürholz. 2019. “Einleitung:\nEntwicklungswege zur KI.” In Künstliche Intelligenz,\nedited by Volker Wittpahl, 21–35. Berlin, Heidelberg:\nSpringer Berlin Heidelberg. https://doi.org/10.1007/978-3-662-58042-4_1.\n\n\nWittpahl, Volker, ed. 2019. Künstliche Intelligenz. Technologien\n Anwendung  Gesellschaft. Berlin,\nHeidelberg: Springer Vieweg. https://link.springer.com/book/10.1007/978-3-662-58042-4."
   },
   {
     "objectID": "appendices/installation.html",
@@ -340,7 +340,7 @@
     "href": "machine-learning/logistic-regression.html",
     "title": "8  Logistische Regression",
     "section": "",
-    "text": "Die logistische Regression ist eine Form der Regressionsanalyse, mit der Kriterien vorhergesagt werden können, die eindeutige Werte auf einer Skala haben. Beispiele dafür sind “angenommen” bzw. “abgelehnt” bei einer Aufnahmeprüfung (genau zwei Werte: binäre logistische Regression) oder “angenommen”, “abgelehnt” oder “Warteliste” (mehrere Werte: multinominale logistische Regression).\nDas Ergebnis einer Vorhersage ist immer eine Wahrscheinlichkeit, mit der ein Kritierium erfüllt ist.\nDer theoretische Hintergrund der Logistischen Regression wird sehr gut auf dieser Seite erklärt."
+    "text": "Die logistische Regression ist eine Form der Regressionsanalyse, mit der Kriterien vorhergesagt werden können, die eindeutige Werte auf einer Skala haben. Beispiele dafür sind “angenommen” bzw. “abgelehnt” bei einer Aufnahmeprüfung (genau zwei Werte: binäre logistische Regression) oder “angenommen”, “abgelehnt” oder “Warteliste” (mehrere Werte: multinominale logistische Regression).\nDas Ergebnis einer Vorhersage ist immer eine Wahrscheinlichkeit, mit der ein Kritierium erfüllt ist.\nDer theoretische Hintergrund der Logistischen Regression wird sehr gut auf dieser Seite in Form von Video und Text erklärt."
   },
   {
     "objectID": "machine-learning/logistic-regression.html#bibliotheken-importieren",
@@ -354,7 +354,7 @@
     "href": "machine-learning/logistic-regression.html#daten-importieren",
     "title": "8  Logistische Regression",
     "section": "8.2 Daten importieren",
-    "text": "8.2 Daten importieren\n\ndataset = pd.read_csv(\"data/Social_Network_Ads.csv\")\n\nDa dieses Datenset umfangreicher ist, werden nur die ersten Zeilen angezeigt.\n\ndataset.head()\n\n\n\n\n\n  \n    \n      \n      Age\n      EstimatedSalary\n      Purchased\n    \n  \n  \n    \n      0\n      19\n      19000\n      0\n    \n    \n      1\n      35\n      20000\n      0\n    \n    \n      2\n      26\n      43000\n      0\n    \n    \n      3\n      27\n      57000\n      0\n    \n    \n      4\n      19\n      76000\n      0"
+    "text": "8.2 Daten importieren\n\ndataset = pd.read_csv(\"data/Social_Network_Ads.csv\")\n\nDa dieses Datenset umfangreicher ist, werden nur die ersten Zeilen angezeigt.\n\ndataset.head(10)\n\n\n\n\n\n  \n    \n      \n      Age\n      EstimatedSalary\n      Purchased\n    \n  \n  \n    \n      0\n      19\n      19000\n      0\n    \n    \n      1\n      35\n      20000\n      0\n    \n    \n      2\n      26\n      43000\n      0\n    \n    \n      3\n      27\n      57000\n      0\n    \n    \n      4\n      19\n      76000\n      0\n    \n    \n      5\n      27\n      58000\n      0\n    \n    \n      6\n      27\n      84000\n      0\n    \n    \n      7\n      32\n      150000\n      1\n    \n    \n      8\n      25\n      33000\n      0\n    \n    \n      9\n      35\n      65000\n      0"
   },
   {
     "objectID": "machine-learning/logistic-regression.html#featurematrix-auswählen",
@@ -424,7 +424,7 @@
     "href": "machine-learning/logistic-regression.html#confusion-matrix-ausgeben",
     "title": "8  Logistische Regression",
     "section": "8.10 Confusion Matrix ausgeben",
-    "text": "8.10 Confusion Matrix ausgeben\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
+    "text": "8.10 Confusion Matrix ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
   },
   {
     "objectID": "machine-learning/logistic-regression.html#visualisierung-des-trainingsets",
@@ -523,5 +523,19 @@
     "title": "1  Einführung in JupyterLab",
     "section": "1.1 Installation",
     "text": "1.1 Installation\nEs gibt mindestens zwei verschiedene Möglichkeiten, JupyterLab zu installieren:\n\nim Rahmen der großen Data-Science-Distribution Anaconda, die für die gängigen Betriebssysteme frei verfügbar ist.\nals Python-Modul\n\nIm Rahmen dieses Kurses reicht Option 2 aus. Entsprechend kann der Dokumentation auf der Website des Projekts gefolgt werden.\nSollten Sie dennoch Anaconda verwenden wollen, ist conda statt pip das Installationstool für weitere Python-Pakete."
+  },
+  {
+    "objectID": "preparation/numpy.html#video-zu-statistischen-grundlagen",
+    "href": "preparation/numpy.html#video-zu-statistischen-grundlagen",
+    "title": "2  numpy",
+    "section": "2.3 Video zu statistischen Grundlagen",
+    "text": "2.3 Video zu statistischen Grundlagen\nDie Wissenschaftlerin Mai Thi Nguyen-Kim hat auf YouTube ein Video veröffentlicht, in dem sie einige statistische Grundfunktionen erläutert."
+  },
+  {
+    "objectID": "machine-learning/logistic-regression.html#wahrheitsmatrix-confusion-matrix-ausgeben",
+    "href": "machine-learning/logistic-regression.html#wahrheitsmatrix-confusion-matrix-ausgeben",
+    "title": "8  Logistische Regression",
+    "section": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben",
+    "text": "8.10 Wahrheitsmatrix (confusion matrix) ausgeben\nDie Wikipedia erklärt sehr gut, wie eine Wahrheitsmatrix (confusion matrix) bei der Gütebewertung des Modells helfen kann.\n\nfrom sklearn.metrics import confusion_matrix, accuracy_score\ncm = confusion_matrix(y_test, y_pred)\nprint(cm)\n# Die Rate der korrekten Vorhersagen\naccuracy_score(y_test, y_pred)\n\n[[52  6]\n [11 31]]\n\n\n0.83"
   }
 ]

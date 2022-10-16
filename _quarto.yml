@@ -19,7 +19,7 @@ book:
         - introduction/jupyter-usage.qmd
     - part: preparation/index.qmd
       chapters:
-        - preparation/numpy.ipynb
+        - preparation/numpy.qmd
         - preparation/matplotlib.ipynb
         - preparation/pandas.ipynb
     - part: machine-learning/index.qmd

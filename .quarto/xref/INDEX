@@ -118,5 +118,8 @@
   },
   "introduction/jupyter-usage.qmd": {
     "jupyter-usage.html": "dca542c9"
+  },
+  "preparation/numpy.qmd": {
+    "numpy.html": "abe29d05"
   }
 }

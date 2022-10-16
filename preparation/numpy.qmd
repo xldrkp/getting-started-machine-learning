@@ -1,0 +1,19 @@
+# numpy
+
+numpy ist eine sehr schnelle Bibliothek für Python, mit der hauptsächlich Operationen auf mehrdimensionalen Arrays ausgeführt werden.
+
+## Einführung in numpy
+
+Es gibt viele gute Tutorials und Anleitungen für *numpy* im Netz. Empfehlenswert ist hierbei die Einheit [in der w3schools](https://www.w3schools.com/python/numpy/default.asp). Das Übertragen der Beispiele in ein Jupyter Notebook hilft, die neue Entwicklungsumgebung besser kennenzulernen. Sie können natürlich auch direkt auf der Webseite der w3schools die Beispiele ausführen.
+
+## Einfache statistische Funktionen mit numpy
+
+Ebenfalls auf den Seiten der w3schools sind [einige Beispiele zu grundlegenden statistischen Funktionen](https://www.w3schools.com/python/python_ml_mean_median_mode.asp) zu finden. Hierbei sind vor allem die folgenden wichtig für das Verständnis der kommenden Konzepte:
+
+- Mittelwert
+- Median
+- Standardabweichung
+
+## Video zu statistischen Grundlagen
+
+Die Wissenschaftlerin Mai Thi Nguyen-Kim hat [auf YouTube](https://www.youtube.com/watch?v=M0VpTjZL57U) ein Video veröffentlicht, in dem sie einige statistische Grundfunktionen erläutert.
